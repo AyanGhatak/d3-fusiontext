@@ -1,0 +1,61 @@
+{
+  "name": "d3-fusiontext",
+  "version": "1.0.0",
+  "description": "Creating composition/ fusion of texts using d3. Supporting inline styling and life simpler!",
+  "main": "index.js",
+  "author": "FusionCharts Technologies  &lt;support@fusioncharts.com&gt;",
+  "contributors": ["Ayan Ghatak", "Akash Goswami"],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "pretest": "script/pretest",
+    "test": "tape 'test/**/*-test.js'",
+    "prepublish": "script/prepublish",
+    "dev": "NODE_ENV=dev && script/prepublish --watch",
+    "reload": "livereload 'build/'",
+    "watch": "npm-run-all --parallel reload dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyanGhatak/d3-fusiontext.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AyanGhatak/d3-fusiontext/issues"
+  },
+  "homepage": "https://github.com/AyanGhatak/d3-fusiontext#readme",
+  "dependencies": {
+    "d3-selection": "^1.0.3",
+    "fusioncharts-smartlabel": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.12.2",
+    "json2module": "0.0",
+    "package-preamble": "0.0",
+    "rimraf": "2",
+    "rollup": "0.36",
+    "rollup-plugin-ascii": "0.0",
+    "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-node-resolve": "2",
+    "rollup-watch": "^3.1.0",
+    "tape": "4",
+    "uglify-js": "2",
+    "uglifyjs": "^2.4.10",
+    "livereload": "^0.6.0",
+    "npm-run-all": "^4.0.0",
+    "rollup-plugin-replace": "^1.1.1"
+  },
+  "keywords": [
+    "smartlabel",
+    "fusioncharts",
+    "text",
+    "svg",
+    "canvas",
+    "fusiontext",
+    "fusion-text",
+    "d3-fusiontext",
+    "d3-smartLabel"
+  ]
+}
