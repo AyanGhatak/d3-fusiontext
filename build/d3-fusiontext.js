@@ -2143,6 +2143,10 @@ var defaultConfig = {
       style: {
           'font-size': '12px'
       },
+      maxDimensions: {
+        width: 1600,
+        height: 900
+      },
       valign: 'middle'
   },
   margin: {
@@ -2177,7 +2181,7 @@ var defaultConfig = {
       }
   },
   labelBound: {
-      hide: false,
+      hide: true,
       className: 'fusioncharts-navigator-standardTimeZone-label-bound' + id,
       style: {
           'fill': 'NONE',
@@ -2432,8 +2436,9 @@ FusionText.prototype.getLogicalSpace = function (selection$$1, options) {
   selection$$1 && this.getParentSelection(selection$$1);
   var config = this.config,
   	smartLabel = this.getSmartLabelInstance(),
-    maxWidth = options && options.width,
-    maxHeight = options && options.height,
+    maxDimensions = config.label.maxDimensions,
+    maxWidth = options && options.width || maxDimensions.width,
+    maxHeight = options && options.height || maxDimensions.height,
     smartText,
     height,
     width,
@@ -2450,7 +2455,7 @@ FusionText.prototype.getLogicalSpace = function (selection$$1, options) {
   for (i = 0, len = textArr.length; i < len; i += 1) {
     textObj = textArr[i];
     // check if it exceeds the available space.
-    if (textObj.oriWidth > maxHeight || textObj.oriHeight > availableWidth) {
+    if (textObj.oriWidth > maxWidth || textObj.oriHeight > maxHeight) {
       smartText = smartLabel.getSmartText(textObj.oriText, availableWidth,
         maxHeight);
       textObj.text = smartText.text;
@@ -2463,10 +2468,9 @@ FusionText.prototype.getLogicalSpace = function (selection$$1, options) {
 
   height = availableHeight;
   width = maxWidth - availableWidth;
-
   return labelBoundConfig.hide ? {
-    width: height,
-    height: width
+    width: width,
+    height: height
   } : boundRect(height, width, labelBoundConfig.style);
 };
 

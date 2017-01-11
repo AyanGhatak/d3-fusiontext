@@ -224,8 +224,9 @@ FusionText.prototype.getLogicalSpace = function (selection, options) {
   selection && this.getParentSelection(selection);
   var config = this.config,
   	smartLabel = this.getSmartLabelInstance(),
-    maxWidth = options && options.width,
-    maxHeight = options && options.height,
+    maxDimensions = config.label.maxDimensions,
+    maxWidth = options && options.width || maxDimensions.width,
+    maxHeight = options && options.height || maxDimensions.height,
     smartText,
     height,
     width,
@@ -242,7 +243,7 @@ FusionText.prototype.getLogicalSpace = function (selection, options) {
   for (i = 0, len = textArr.length; i < len; i += 1) {
     textObj = textArr[i];
     // check if it exceeds the available space.
-    if (textObj.oriWidth > maxHeight || textObj.oriHeight > availableWidth) {
+    if (textObj.oriWidth > maxWidth || textObj.oriHeight > maxHeight) {
       smartText = smartLabel.getSmartText(textObj.oriText, availableWidth,
         maxHeight);
       textObj.text = smartText.text;
@@ -255,10 +256,9 @@ FusionText.prototype.getLogicalSpace = function (selection, options) {
 
   height = availableHeight;
   width = maxWidth - availableWidth;
-
   return labelBoundConfig.hide ? {
-    width: height,
-    height: width
+    width: width,
+    height: height
   } : boundRect(height, width, labelBoundConfig.style);
 };
 

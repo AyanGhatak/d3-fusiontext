@@ -21,6 +21,10 @@ export default {
       style: {
           'font-size': '12px'
       },
+      maxDimensions: {
+        width: 1600,
+        height: 900
+      },
       valign: 'middle'
   },
   margin: {
@@ -55,7 +59,7 @@ export default {
       }
   },
   labelBound: {
-      hide: false,
+      hide: true,
       className: 'fusioncharts-navigator-standardTimeZone-label-bound' + id,
       style: {
           'fill': 'NONE',
