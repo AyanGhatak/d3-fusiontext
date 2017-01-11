@@ -2096,8 +2096,18 @@ module.exports = exports['default'];
 var SLManager = unwrapExports(SmartlabelManager);
 
 var util = {
-  mergeRecursive: function () {
-    return arguments[0];
+  mergeRecursive: function mergeRecursive(source, sink) {
+     var prop;
+
+     for (prop in sink) {
+
+         if (source[prop] instanceof Object) {
+             mergeRecursive(source[prop], sink[prop]);
+         }
+         else {
+             source[prop] = sink[prop];
+         }
+     }
   },
   serialize: function () {
 
@@ -2132,7 +2142,8 @@ var defaultConfig = {
       className: 'fusioncharts-yAxis-name' + id,
       style: {
           'font-size': '12px'
-      }
+      },
+      valign: 'middle'
   },
   margin: {
       left: 0,
@@ -2461,13 +2472,13 @@ FusionText.prototype.getLogicalSpace = function (selection$$1, options) {
 
 FusionText.prototype.tuneText = function (el, params) {
   var x = +el.attr('x'),
-  // y = +el.attr('y'),
+  y = +el.attr('y'),
   computedStyle = getComputedStyle(el.node(), BLANKSTRING),
   texts = str(params.text).split(/\n|<br\s*?\/?>/ig),
-  // tspans = [],
   fontSize = computedStyle ? toFloat(computedStyle.getPropertyValue("font-size")) : 10,
   lineHeight = fontSize * 1.2,
-  valign = el.attr('vertical-align') || 'middle';
+  valign = this.config.label.valign,
+  bb;
   /*direction = (el.attr('direction') || (computedStyle ?
     computedStyle.getPropertyValue("direction") : "initial")).toLowerCase();*/
 
@@ -2479,6 +2490,11 @@ FusionText.prototype.tuneText = function (el, params) {
   .enter()
   .append('tspan')
   .call(this.updateTuning, x, lineHeight, texts, valign);
+
+  bb = el.node().getBBox();
+
+  el.select('tspan')
+  .attr('dy', y - (bb.y + bb.height / 2));
 
   return (texts.length - 1) * lineHeight;
 };
@@ -2572,9 +2588,8 @@ FusionText.prototype.drawLabel = function (selection$$1, options) {
       console.log('x: ', x, 'y: ', y);*/
       label.attr('x', x)
       .attr('y', y);
-      // .attr('text-anchor', 'middle')
+      // .attr('text-anchor', 'top')
       // .text(textObj.text);
-
       y += this.tuneText(label, textObj);
       sumX += textObj.width;
     }
