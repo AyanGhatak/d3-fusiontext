@@ -1,6 +1,16 @@
 var util = {
-  mergeRecursive: function () {
-    return arguments[0];
+  mergeRecursive: function mergeRecursive(source, sink) {
+     var prop;
+
+     for (prop in sink) {
+
+         if (source[prop] instanceof Object) {
+             mergeRecursive(source[prop], sink[prop]);
+         }
+         else {
+             source[prop] = sink[prop];
+         }
+     }
   },
   serialize: function () {
 

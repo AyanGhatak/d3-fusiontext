@@ -20,7 +20,8 @@ export default {
       className: 'fusioncharts-yAxis-name' + id,
       style: {
           'font-size': '12px'
-      }
+      },
+      valign: 'middle'
   },
   margin: {
       left: 0,

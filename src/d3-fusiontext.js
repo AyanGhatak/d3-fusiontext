@@ -264,13 +264,13 @@ FusionText.prototype.getLogicalSpace = function (selection, options) {
 
 FusionText.prototype.tuneText = function (el, params) {
   var x = +el.attr('x'),
-  // y = +el.attr('y'),
+  y = +el.attr('y'),
   computedStyle = getComputedStyle(el.node(), BLANKSTRING),
   texts = str(params.text).split(/\n|<br\s*?\/?>/ig),
-  // tspans = [],
   fontSize = computedStyle ? toFloat(computedStyle.getPropertyValue("font-size")) : 10,
   lineHeight = fontSize * 1.2,
-  valign = el.attr('vertical-align') || 'middle';
+  valign = this.config.label.valign,
+  bb;
   /*direction = (el.attr('direction') || (computedStyle ?
     computedStyle.getPropertyValue("direction") : "initial")).toLowerCase();*/
 
@@ -282,6 +282,11 @@ FusionText.prototype.tuneText = function (el, params) {
   .enter()
   .append('tspan')
   .call(this.updateTuning, x, lineHeight, texts, valign);
+
+  bb = el.node().getBBox();
+
+  el.select('tspan')
+  .attr('dy', y - (bb.y + bb.height / 2));
 
   return (texts.length - 1) * lineHeight;
 };
@@ -375,9 +380,8 @@ FusionText.prototype.drawLabel = function (selection, options) {
       console.log('x: ', x, 'y: ', y);*/
       label.attr('x', x)
       .attr('y', y);
-      // .attr('text-anchor', 'middle')
+      // .attr('text-anchor', 'top')
       // .text(textObj.text);
-
       y += this.tuneText(label, textObj);
       sumX += textObj.width;
     }
