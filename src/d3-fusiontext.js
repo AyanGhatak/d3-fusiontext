@@ -27,7 +27,7 @@ var win = window,
     getComputedStyle = win.getComputedStyle;
 
 function FusionText() {
-  this.config = defaultConfig;
+  this.config = defaultConfig();
   this.graphics = {};
   this.measurement = {};
 }
