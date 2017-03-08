@@ -13,6 +13,7 @@
     "test": "tape 'test/**/*-test.js'",
     "prepublish": "script/prepublish",
     "dev": "NODE_ENV=dev && script/prepublish --watch",
+    "build": "NODE_ENV=production script/prepublish",
     "reload": "livereload 'build/'",
     "watch": "npm-run-all --parallel reload dev"
   },

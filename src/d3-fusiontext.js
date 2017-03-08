@@ -7,10 +7,10 @@ import defaultConfig from './defaultConfig';
 
 /*eslint-disable */
 if (ENV !== 'production') {
-	document && document.write(
-	 '<script src="http://' + (location.host || 'localhost').split(':')[0] +
-	 ':35729/livereload.js?snipver=1"></' + 'script>'
-	);
+  document && document.write(
+   '<script src="http://' + (location.host || 'localhost').split(':')[0] +
+   ':35729/livereload.js?snipver=1"></' + 'script>'
+  );
 }
 /*eslint-enable */
 
@@ -34,14 +34,21 @@ function FusionText() {
 
 
 // Parse the attributes either in a single config object or in the JSON structure
-FusionText.prototype.group = function (className) {
-  className && (this.config.group.className = className);
+FusionText.prototype.margin = function (obj) {
+  obj && util.mergeRecursive(this.config.margin, obj);
   return this;
 };
-FusionText.prototype.label = function (text, options) {
+
+FusionText.prototype.padding = function (obj) {
+  obj && util.mergeRecursive(this.config.padding, obj);
+  return this;
+};
+
+FusionText.prototype.label = function (text, options, callback) {
   var labelConfig = this.config.label;
   text && (labelConfig.text = text);
   options && util.mergeRecursive(labelConfig, options);
+  callback && callback.call(this);
   return this;
 };
 /*FusionText.prototype.interaction = function () {
@@ -57,6 +64,10 @@ FusionText.prototype.getSmartLabelInstance = function (inst) {
 		this.smartLabel = inst || new SLManager(new Date().getTime());
 	}
 	return this.smartLabel;
+};
+
+FusionText.prototype.getConfig = function (val) {
+  return this.config[val];
 };
 
 
@@ -78,9 +89,18 @@ FusionText.prototype.getStubSelection = function (parentSelection,
     else {
       classNames = BLANKSTRING;
     }
-    var className,
-      selection = parentSelection.append('g')
-      .attr('class', className = (defaultClassName + classNames));
+
+    var className = (defaultClassName + classNames),
+      selection;
+
+
+    if (!this._group) {
+      this._group = parentSelection.append('g');
+    }
+
+    selection = this._group.attr('class', className);
+
+
 
     if (style) {
       if (style[2]) {
@@ -168,52 +188,50 @@ FusionText.prototype.parsedText = function () {
     t,
     textDim,
     len;
-  if (!textArr) {
-    textArr = this.textArr = [];
-    groupArr.push(this.getStubSelection(parentSelection, labelConfig.className, labelConfig.style));
-    // split the entire string into array of strings.
-    arr = titleText.split(new RegExp('(<' + customTag + ')([^>]*)>|(<\/' + customTag + '>)', 'g'));
-    openingTag = '<' + customTag;
-    closingTag = '</' + customTag + '>';
+  textArr = this.textArr = [];
+  groupArr.push(this.getStubSelection(parentSelection, labelConfig.className, labelConfig.style));
+  // split the entire string into array of strings.
+  arr = titleText.split(new RegExp('(<' + customTag + ')([^>]*)>|(<\/' + customTag + '>)', 'g'));
+  openingTag = '<' + customTag;
+  closingTag = '</' + customTag + '>';
 
-    smartLabel.useEllipsesOnOverflow(1);
+  smartLabel.useEllipsesOnOverflow(1);
 
-    // on every occurence of the customTag, create a group and apply the inline css to it.
-    for (i = 0, len = arr.length; i < len; i += 1) {
-      if ((elem = arr[i]) !== UNDEFINED) {
-        // the element is a FusionText.
-        if (elem === openingTag) {
-          // "<FusionText"  -create group.
-          // group index increases.
-          gIndex += 1;
-          // continue the next iteration. - as the style has already been applied inline to the group.
-          defaultClassName = customTagClassName + HYPHENATE + count++;
-          userStr = arr[++i];
-          groupArr[gIndex] = this.getStubSelection(groupArr[gIndex - 1].selection,
-            defaultClassName,
-            new RegExp('\\sstyle=([\"\'])([^\\1]+)\\1', 'g').exec(userStr),
-            new RegExp('class=[\"\']([a-z\\d\\s]+)[\"\']','gi').exec(userStr));
-        }
-        else if (elem === closingTag) {
-          // </FusionText> -  subtract the group index.
-          gIndex -= 1;
-        }
-        // the element is not a FusionText tagged.
-        else if (elem !== BLANKSTRING){
-          g = groupArr[gIndex];
-          t = arr[i];
-          smartLabel.setStyle(g.style);
-          textDim = smartLabel.getOriSize(t || BLANKSTRING);
-          textArr.push({
-            selection: g.selection,
-            oriText: t,
-            text: t,
-            oriWidth: textDim.width,
-            width: textDim.width,
-            oriHeight: textDim.height,
-            height: textDim.height
-          });
-        }
+  // on every occurence of the customTag, create a group and apply the inline css to it.
+  for (i = 0, len = arr.length; i < len; i += 1) {
+    if ((elem = arr[i]) !== UNDEFINED) {
+      // the element is a FusionText.
+      if (elem === openingTag) {
+        // "<FusionText"  -create group.
+        // group index increases.
+        gIndex += 1;
+        // continue the next iteration. - as the style has already been applied inline to the group.
+        defaultClassName = customTagClassName + HYPHENATE + count++;
+        userStr = arr[++i];
+        groupArr[gIndex] = this.getStubSelection(groupArr[gIndex - 1].selection,
+          defaultClassName,
+          new RegExp('\\sstyle=([\"\'])([^\\1]+)\\1', 'g').exec(userStr),
+          new RegExp('class=[\"\']([a-z\\d\\s]+)[\"\']','gi').exec(userStr));
+      }
+      else if (elem === closingTag) {
+        // </FusionText> -  subtract the group index.
+        gIndex -= 1;
+      }
+      // the element is not a FusionText tagged.
+      else if (elem !== BLANKSTRING){
+        g = groupArr[gIndex];
+        t = arr[i];
+        smartLabel.setStyle(g.style);
+        textDim = smartLabel.getOriSize(t || BLANKSTRING);
+        textArr.push({
+          selection: g.selection,
+          oriText: t,
+          text: t,
+          oriWidth: textDim.width,
+          width: textDim.width,
+          oriHeight: textDim.height,
+          height: textDim.height
+        });
       }
     }
   }
@@ -225,8 +243,11 @@ FusionText.prototype.getLogicalSpace = function (selection, options) {
   var config = this.config,
   	smartLabel = this.getSmartLabelInstance(),
     maxDimensions = config.label.maxDimensions,
-    maxWidth = options && options.width || maxDimensions.width,
-    maxHeight = options && options.height || maxDimensions.height,
+    margin = config.margin,
+    hMargin = margin.left + margin.right,
+    vMargin = margin.top + margin.bottom,
+    maxWidth = (options && options.width || maxDimensions.width) - hMargin,
+    maxHeight = (options && options.height || maxDimensions.height) - vMargin,
     smartText,
     height,
     width,
@@ -257,8 +278,8 @@ FusionText.prototype.getLogicalSpace = function (selection, options) {
   height = availableHeight;
   width = maxWidth - availableWidth;
   return labelBoundConfig.hide ? {
-    width: width,
-    height: height
+    width: width + hMargin,
+    height: height + vMargin
   } : boundRect(height, width, labelBoundConfig.style);
 };
 
@@ -310,12 +331,14 @@ FusionText.prototype.updateTuning = function (selection, x, lineHeight, texts, v
 
 FusionText.prototype.setDrawingConfiguration = function (x, y, width, height) {
   var mes = this.measurement;
+
   if (util.isObject(x)) {
     y = x.y;
     width = x.width;
     height = x.height;
     x = x.x;
   }
+
   mes.x = x;
   mes.y = y;
   mes.width = width;
@@ -326,7 +349,7 @@ FusionText.prototype.setDrawingConfiguration = function (x, y, width, height) {
 
 // Draw the fusion-text.
 FusionText.prototype.draw = function (selection, options) {
-  if (options.width || options.height) {
+  if (options && (options.width || options.height)) {
     this.getLogicalSpace(this.getParentSelection(selection), {
       width: options.width,
       height: options.height
@@ -348,6 +371,7 @@ FusionText.prototype.drawLabel = function (selection, options) {
   var graphics = this.graphics,
       labelArr = graphics.labelArr || (graphics.labelArr = []),
       measurement = this.measurement,
+      margin = this.config.margin,
       x,
       y,
       i,
@@ -364,6 +388,9 @@ FusionText.prototype.drawLabel = function (selection, options) {
     y = y === undefined ? measurement.y : y;
     width = width === undefined ? measurement.width : width;
     height = height === undefined ? measurement.height : height;
+
+    x += margin.left;
+    y += margin.top;
 
     sumX = x;
     // donot draw if height asked is 0
@@ -391,22 +418,10 @@ FusionText.prototype.drawLabel = function (selection, options) {
 FusionText.prototype.drawTracker = function () {
   return this;
 };
-FusionText.prototype.attachEvents = function () {
 
-};
-
-
-
-
-
-
-
-
-
-
-
-FusionText.prototype.test = function () {
-  return this.getSmartLabelInstance();
+FusionText.prototype.transform = function (str) {
+  return this.getParentSelection()
+  .attr('transform', str);
 };
 
 

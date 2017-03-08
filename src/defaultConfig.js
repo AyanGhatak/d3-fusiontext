@@ -3,15 +3,9 @@ var id = 1,
 
 export default function () {
   return {
-    group: {
-        className: 'container',
-        style: {
-            fill: '#C8C8C8'
-        }
-    },
     label: {
         customTagName: 'FT',
-        customTagClassName: 'fusioncharts-yAxis-custom-name' + id,
+        customTagClassName: 'custom-label',
         /*text: 'G<br /><FT style="color:blue;">G<FT>C</FT></FT>A<FT>D</FT>',*/
         /*text: 'A<br/>A<FT style="fill:red; font-size:30px;">B<br/>B<FT style="fill:blue;">C'+
         '</FT></FT>D<FT style="fill:green;">E</FT>',*/
@@ -19,7 +13,7 @@ export default function () {
         '<FT style="fill:green;">E</FT>',*/
         text: '',
         // text: 'ABC',
-        className: 'fusioncharts-yAxis-name' + id,
+        className: 'label',
         style: {
             'font-size': '12px'
         },
