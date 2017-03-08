@@ -4,6 +4,44 @@
 	(factory((global.d3 = global.d3 || {})));
 }(this, (function (exports) { 'use strict';
 
+var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+
+
+
+function unwrapExports (x) {
+	return x && x.__esModule ? x['default'] : x;
+}
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var d3Fusiontext = createCommonjsModule(function (module, exports) {
+(function (global, factory) {
+	'object' === 'object' && 'object' !== 'undefined' ? factory(exports) :
+	typeof undefined === 'function' && undefined.amd ? undefined(['exports'], factory) :
+	(factory((global.d3 = global.d3 || {})));
+}(commonjsGlobal, (function (exports) { 'use strict';
+
+var commonjsGlobal$$1 = typeof window !== 'undefined' ? window : typeof commonjsGlobal !== 'undefined' ? commonjsGlobal : typeof self !== 'undefined' ? self : {};
+
+
+
+function unwrapExports$$1 (x) {
+	return x && x.__esModule ? x['default'] : x;
+}
+
+function createCommonjsModule$$1(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var d3Fusiontext = createCommonjsModule$$1(function (module, exports) {
+(function (global, factory) {
+	'object' === 'object' && 'object' !== 'undefined' ? factory(exports) :
+	typeof undefined === 'function' && undefined.amd ? undefined(['exports'], factory) :
+	(factory((global.d3 = global.d3 || {})));
+}(commonjsGlobal$$1, (function (exports) { 'use strict';
+
 var xhtml = "http://www.w3.org/1999/xhtml";
 
 var namespaces = {
@@ -880,15 +918,15 @@ var select = function(selector) {
       : new Selection([[selector]], root);
 };
 
-function unwrapExports (x) {
+function unwrapExports$$1 (x) {
 	return x && x.__esModule ? x['default'] : x;
 }
 
-function createCommonjsModule(fn, module) {
+function createCommonjsModule$$1(fn, module) {
 	return module = { exports: {} }, fn(module, module.exports), module.exports;
 }
 
-var lib_1 = createCommonjsModule(function (module, exports) {
+var lib_1 = createCommonjsModule$$1(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -1091,7 +1129,7 @@ exports['default'] = lib;
 module.exports = exports['default'];
 });
 
-var containerManager = createCommonjsModule(function (module) {
+var containerManager = createCommonjsModule$$1(function (module) {
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -1274,7 +1312,7 @@ ContainerManager.prototype.dispose = function () {
 module.exports = ContainerManager;
 });
 
-var SmartlabelManager = createCommonjsModule(function (module, exports) {
+var SmartlabelManager = createCommonjsModule$$1(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -2093,7 +2131,7 @@ exports['default'] = SmartLabelManager;
 module.exports = exports['default'];
 });
 
-var SLManager = unwrapExports(SmartlabelManager);
+var SLManager = unwrapExports$$1(SmartlabelManager);
 
 var util = {
   mergeRecursive: function mergeRecursive(source, sink) {
@@ -2635,6 +2673,24 @@ var d3Fusiontext = function() {
 };
 
 exports.fusiontext = d3Fusiontext;
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
+});
+
+var d3Fusiontext$1 = unwrapExports$$1(d3Fusiontext);
+
+exports.fusiontext = d3Fusiontext$1;
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
+});
+
+var d3Fusiontext$1 = unwrapExports(d3Fusiontext);
+
+exports.fusiontext = d3Fusiontext$1;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
