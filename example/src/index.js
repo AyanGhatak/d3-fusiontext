@@ -1,9 +1,7 @@
 import { fusiontext } from 'd3-fusiontext';
 import { select } from 'd3-selection';
 
-var a = fusiontext();
-debugger
-  a.label('<FT style="fill:coral;">The quick brown</FT><FT style="fill:blue;">Fox jumps</FT><FT style="fill:orange;">Over the</FT><FT  style="fill:brown;">Lazy dog</FT>',{
+fusiontext().label('<FT style="fill:coral;">The quick brown</FT><FT style="fill:blue;">Fox jumps</FT><FT style="fill:orange;">Over the</FT><FT  style="fill:brown;">Lazy dog</FT>',{
     valign: 'top'
   })
   .draw(select('#container1'), {

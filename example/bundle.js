@@ -61,7 +61,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 49);
+/******/ 	return __webpack_require__(__webpack_require__.s = 100);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -69,35 +69,147 @@
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__select__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selectAll__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__filter__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enter__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__exit__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__merge__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__order__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__sort__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__call__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__nodes__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__node__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__size__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__empty__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__each__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__attr__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__style__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__property__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__classed__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__text__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__html__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__raise__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__lower__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__append__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__insert__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__remove__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__datum__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__on__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__dispatch__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__select__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selectAll__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__filter__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enter__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__exit__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__merge__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__order__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__sort__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__call__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__nodes__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__node__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__size__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__empty__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__each__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__attr__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__style__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__property__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__classed__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__text__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__html__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__raise__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__lower__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__append__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__insert__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__remove__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__datum__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__on__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__dispatch__ = __webpack_require__(41);
+
+/* harmony export */ __webpack_require__.d(exports, "b", function() { return root; });/* harmony export */ exports["a"] = Selection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var root = [null];
+
+function Selection(groups, parents) {
+  this._groups = groups;
+  this._parents = parents;
+}
+
+function selection() {
+  return new Selection([[document.documentElement]], root);
+}
+
+Selection.prototype = selection.prototype = {
+  constructor: Selection,
+  select: __WEBPACK_IMPORTED_MODULE_0__select__["a" /* default */],
+  selectAll: __WEBPACK_IMPORTED_MODULE_1__selectAll__["a" /* default */],
+  filter: __WEBPACK_IMPORTED_MODULE_2__filter__["a" /* default */],
+  data: __WEBPACK_IMPORTED_MODULE_3__data__["a" /* default */],
+  enter: __WEBPACK_IMPORTED_MODULE_4__enter__["b" /* default */],
+  exit: __WEBPACK_IMPORTED_MODULE_5__exit__["a" /* default */],
+  merge: __WEBPACK_IMPORTED_MODULE_6__merge__["a" /* default */],
+  order: __WEBPACK_IMPORTED_MODULE_7__order__["a" /* default */],
+  sort: __WEBPACK_IMPORTED_MODULE_8__sort__["a" /* default */],
+  call: __WEBPACK_IMPORTED_MODULE_9__call__["a" /* default */],
+  nodes: __WEBPACK_IMPORTED_MODULE_10__nodes__["a" /* default */],
+  node: __WEBPACK_IMPORTED_MODULE_11__node__["a" /* default */],
+  size: __WEBPACK_IMPORTED_MODULE_12__size__["a" /* default */],
+  empty: __WEBPACK_IMPORTED_MODULE_13__empty__["a" /* default */],
+  each: __WEBPACK_IMPORTED_MODULE_14__each__["a" /* default */],
+  attr: __WEBPACK_IMPORTED_MODULE_15__attr__["a" /* default */],
+  style: __WEBPACK_IMPORTED_MODULE_16__style__["a" /* default */],
+  property: __WEBPACK_IMPORTED_MODULE_17__property__["a" /* default */],
+  classed: __WEBPACK_IMPORTED_MODULE_18__classed__["a" /* default */],
+  text: __WEBPACK_IMPORTED_MODULE_19__text__["a" /* default */],
+  html: __WEBPACK_IMPORTED_MODULE_20__html__["a" /* default */],
+  raise: __WEBPACK_IMPORTED_MODULE_21__raise__["a" /* default */],
+  lower: __WEBPACK_IMPORTED_MODULE_22__lower__["a" /* default */],
+  append: __WEBPACK_IMPORTED_MODULE_23__append__["a" /* default */],
+  insert: __WEBPACK_IMPORTED_MODULE_24__insert__["a" /* default */],
+  remove: __WEBPACK_IMPORTED_MODULE_25__remove__["a" /* default */],
+  datum: __WEBPACK_IMPORTED_MODULE_26__datum__["a" /* default */],
+  on: __WEBPACK_IMPORTED_MODULE_27__on__["b" /* default */],
+  dispatch: __WEBPACK_IMPORTED_MODULE_28__dispatch__["a" /* default */]
+};
+
+/* harmony default export */ exports["c"] = selection;
+
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__select__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selectAll__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__filter__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enter__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__exit__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__merge__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__order__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__sort__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__call__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__nodes__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__node__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__size__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__empty__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__each__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__attr__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__style__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__property__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__classed__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__text__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__html__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__raise__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__lower__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__append__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__insert__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__remove__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__datum__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__on__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__dispatch__ = __webpack_require__(77);
 
 /* harmony export */ __webpack_require__.d(exports, "b", function() { return root; });/* harmony export */ exports["a"] = Selection;
 
@@ -177,12 +289,12 @@ Selection.prototype = selection.prototype = {
 
 
 /***/ },
-/* 1 */
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__namespace__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__namespaces__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__namespace__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__namespaces__ = __webpack_require__(4);
 
 
 
@@ -211,11 +323,11 @@ function creatorFixed(fullname) {
 
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__namespaces__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__namespaces__ = __webpack_require__(4);
 
 
 /* harmony default export */ exports["a"] = function(name) {
@@ -226,7 +338,7 @@ function creatorFixed(fullname) {
 
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -243,7 +355,7 @@ function creatorFixed(fullname) {
 
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -263,7 +375,249 @@ function creatorFixed(fullname) {
 
 
 /***/ },
-/* 5 */
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/* harmony export */ __webpack_require__.d(exports, "a", function() { return event; });/* harmony export */ exports["c"] = customEvent;var filterEvents = {};
+
+var event = null;
+
+if (typeof document !== "undefined") {
+  var element = document.documentElement;
+  if (!("onmouseenter" in element)) {
+    filterEvents = {mouseenter: "mouseover", mouseleave: "mouseout"};
+  }
+}
+
+function filterContextListener(listener, index, group) {
+  listener = contextListener(listener, index, group);
+  return function(event) {
+    var related = event.relatedTarget;
+    if (!related || (related !== this && !(related.compareDocumentPosition(this) & 8))) {
+      listener.call(this, event);
+    }
+  };
+}
+
+function contextListener(listener, index, group) {
+  return function(event1) {
+    var event0 = event; // Events can be reentrant (e.g., focus).
+    event = event1;
+    try {
+      listener.call(this, this.__data__, index, group);
+    } finally {
+      event = event0;
+    }
+  };
+}
+
+function parseTypenames(typenames) {
+  return typenames.trim().split(/^|\s+/).map(function(t) {
+    var name = "", i = t.indexOf(".");
+    if (i >= 0) name = t.slice(i + 1), t = t.slice(0, i);
+    return {type: t, name: name};
+  });
+}
+
+function onRemove(typename) {
+  return function() {
+    var on = this.__on;
+    if (!on) return;
+    for (var j = 0, i = -1, m = on.length, o; j < m; ++j) {
+      if (o = on[j], (!typename.type || o.type === typename.type) && o.name === typename.name) {
+        this.removeEventListener(o.type, o.listener, o.capture);
+      } else {
+        on[++i] = o;
+      }
+    }
+    if (++i) on.length = i;
+    else delete this.__on;
+  };
+}
+
+function onAdd(typename, value, capture) {
+  var wrap = filterEvents.hasOwnProperty(typename.type) ? filterContextListener : contextListener;
+  return function(d, i, group) {
+    var on = this.__on, o, listener = wrap(value, i, group);
+    if (on) for (var j = 0, m = on.length; j < m; ++j) {
+      if ((o = on[j]).type === typename.type && o.name === typename.name) {
+        this.removeEventListener(o.type, o.listener, o.capture);
+        this.addEventListener(o.type, o.listener = listener, o.capture = capture);
+        o.value = value;
+        return;
+      }
+    }
+    this.addEventListener(typename.type, listener, capture);
+    o = {type: typename.type, name: typename.name, value: value, listener: listener, capture: capture};
+    if (!on) this.__on = [o];
+    else on.push(o);
+  };
+}
+
+/* harmony default export */ exports["b"] = function(typename, value, capture) {
+  var typenames = parseTypenames(typename + ""), i, n = typenames.length, t;
+
+  if (arguments.length < 2) {
+    var on = this.node().__on;
+    if (on) for (var j = 0, m = on.length, o; j < m; ++j) {
+      for (i = 0, o = on[j]; i < n; ++i) {
+        if ((t = typenames[i]).type === o.type && t.name === o.name) {
+          return o.value;
+        }
+      }
+    }
+    return;
+  }
+
+  on = value ? onAdd : onRemove;
+  if (capture == null) capture = false;
+  for (i = 0; i < n; ++i) this.each(on(typenames[i], value, capture));
+  return this;
+};
+
+function customEvent(event1, listener, that, args) {
+  var event0 = event;
+  event1.sourceEvent = event;
+  event = event1;
+  try {
+    return listener.apply(that, args);
+  } finally {
+    event = event0;
+  }
+}
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+function none() {}
+
+/* harmony default export */ exports["a"] = function(selector) {
+  return selector == null ? none : function() {
+    return this.querySelector(selector);
+  };
+};
+
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__selection_on__ = __webpack_require__(6);
+
+
+/* harmony default export */ exports["a"] = function() {
+  var current = __WEBPACK_IMPORTED_MODULE_0__selection_on__["a" /* event */], source;
+  while (source = current.sourceEvent) current = source;
+  return current;
+};
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["a"] = function(node) {
+  return (node.ownerDocument && node.ownerDocument.defaultView) // node is a Node
+      || (node.document && node) // node is a Window
+      || node.defaultView; // node is a Document
+};
+
+
+/***/ },
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__namespace__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__namespaces__ = __webpack_require__(12);
+
+
+
+function creatorInherit(name) {
+  return function() {
+    var document = this.ownerDocument,
+        uri = this.namespaceURI;
+    return uri === __WEBPACK_IMPORTED_MODULE_1__namespaces__["b" /* xhtml */] && document.documentElement.namespaceURI === __WEBPACK_IMPORTED_MODULE_1__namespaces__["b" /* xhtml */]
+        ? document.createElement(name)
+        : document.createElementNS(uri, name);
+  };
+}
+
+function creatorFixed(fullname) {
+  return function() {
+    return this.ownerDocument.createElementNS(fullname.space, fullname.local);
+  };
+}
+
+/* harmony default export */ exports["a"] = function(name) {
+  var fullname = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__namespace__["a" /* default */])(name);
+  return (fullname.local
+      ? creatorFixed
+      : creatorInherit)(fullname);
+};
+
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__namespaces__ = __webpack_require__(12);
+
+
+/* harmony default export */ exports["a"] = function(name) {
+  var prefix = name += "", i = prefix.indexOf(":");
+  if (i >= 0 && (prefix = name.slice(0, i)) !== "xmlns") name = name.slice(i + 1);
+  return __WEBPACK_IMPORTED_MODULE_0__namespaces__["a" /* default */].hasOwnProperty(prefix) ? {space: __WEBPACK_IMPORTED_MODULE_0__namespaces__["a" /* default */][prefix], local: name} : name;
+};
+
+
+/***/ },
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/* harmony export */ __webpack_require__.d(exports, "b", function() { return xhtml; });var xhtml = "http://www.w3.org/1999/xhtml";
+
+/* harmony default export */ exports["a"] = {
+  svg: "http://www.w3.org/2000/svg",
+  xhtml: xhtml,
+  xlink: "http://www.w3.org/1999/xlink",
+  xml: "http://www.w3.org/XML/1998/namespace",
+  xmlns: "http://www.w3.org/2000/xmlns/"
+};
+
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["a"] = function(node, event) {
+  var svg = node.ownerSVGElement || node;
+
+  if (svg.createSVGPoint) {
+    var point = svg.createSVGPoint();
+    point.x = event.clientX, point.y = event.clientY;
+    point = point.matrixTransform(node.getScreenCTM().inverse());
+    return [point.x, point.y];
+  }
+
+  var rect = node.getBoundingClientRect();
+  return [event.clientX - rect.left - node.clientLeft, event.clientY - rect.top - node.clientTop];
+};
+
+
+/***/ },
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -378,7 +732,7 @@ function customEvent(event1, listener, that, args) {
 
 
 /***/ },
-/* 6 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -392,11 +746,11 @@ function none() {}
 
 
 /***/ },
-/* 7 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__selection_on__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__selection_on__ = __webpack_require__(14);
 
 
 /* harmony default export */ exports["a"] = function() {
@@ -407,7 +761,7 @@ function none() {}
 
 
 /***/ },
-/* 8 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -419,7 +773,7 @@ function none() {}
 
 
 /***/ },
-/* 9 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -448,11 +802,11 @@ if (typeof document !== "undefined") {
 
 
 /***/ },
-/* 10 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sparse__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sparse__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(0);
 /* harmony export */ exports["a"] = EnterNode;
 
@@ -479,7 +833,7 @@ EnterNode.prototype = {
 
 
 /***/ },
-/* 11 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -489,7 +843,7 @@ EnterNode.prototype = {
 
 
 /***/ },
-/* 12 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -505,900 +859,10 @@ function empty() {
 
 
 /***/ },
-/* 13 */
-/***/ function(module, exports, __webpack_require__) {
+/* 22 */
+/***/ function(module, exports) {
 
-(function (global, factory) {
-	 true ? factory(exports) :
-	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(factory((global.d3 = global.d3 || {})));
-}(this, (function (exports) { 'use strict';
-
-var xhtml = "http://www.w3.org/1999/xhtml";
-
-var namespaces = {
-  svg: "http://www.w3.org/2000/svg",
-  xhtml: xhtml,
-  xlink: "http://www.w3.org/1999/xlink",
-  xml: "http://www.w3.org/XML/1998/namespace",
-  xmlns: "http://www.w3.org/2000/xmlns/"
-};
-
-var namespace = function(name) {
-  var prefix = name += "", i = prefix.indexOf(":");
-  if (i >= 0 && (prefix = name.slice(0, i)) !== "xmlns") name = name.slice(i + 1);
-  return namespaces.hasOwnProperty(prefix) ? {space: namespaces[prefix], local: name} : name;
-};
-
-function creatorInherit(name) {
-  return function() {
-    var document = this.ownerDocument,
-        uri = this.namespaceURI;
-    return uri === xhtml && document.documentElement.namespaceURI === xhtml
-        ? document.createElement(name)
-        : document.createElementNS(uri, name);
-  };
-}
-
-function creatorFixed(fullname) {
-  return function() {
-    return this.ownerDocument.createElementNS(fullname.space, fullname.local);
-  };
-}
-
-var creator = function(name) {
-  var fullname = namespace(name);
-  return (fullname.local
-      ? creatorFixed
-      : creatorInherit)(fullname);
-};
-
-var nextId = 0;
-
-var matcher = function(selector) {
-  return function() {
-    return this.matches(selector);
-  };
-};
-
-if (typeof document !== "undefined") {
-  var element = document.documentElement;
-  if (!element.matches) {
-    var vendorMatches = element.webkitMatchesSelector
-        || element.msMatchesSelector
-        || element.mozMatchesSelector
-        || element.oMatchesSelector;
-    matcher = function(selector) {
-      return function() {
-        return vendorMatches.call(this, selector);
-      };
-    };
-  }
-}
-
-var matcher$1 = matcher;
-
-var filterEvents = {};
-
-var event = null;
-
-if (typeof document !== "undefined") {
-  var element$1 = document.documentElement;
-  if (!("onmouseenter" in element$1)) {
-    filterEvents = {mouseenter: "mouseover", mouseleave: "mouseout"};
-  }
-}
-
-function filterContextListener(listener, index, group) {
-  listener = contextListener(listener, index, group);
-  return function(event) {
-    var related = event.relatedTarget;
-    if (!related || (related !== this && !(related.compareDocumentPosition(this) & 8))) {
-      listener.call(this, event);
-    }
-  };
-}
-
-function contextListener(listener, index, group) {
-  return function(event1) {
-    var event0 = event; // Events can be reentrant (e.g., focus).
-    event = event1;
-    try {
-      listener.call(this, this.__data__, index, group);
-    } finally {
-      event = event0;
-    }
-  };
-}
-
-function parseTypenames(typenames) {
-  return typenames.trim().split(/^|\s+/).map(function(t) {
-    var name = "", i = t.indexOf(".");
-    if (i >= 0) name = t.slice(i + 1), t = t.slice(0, i);
-    return {type: t, name: name};
-  });
-}
-
-function onRemove(typename) {
-  return function() {
-    var on = this.__on;
-    if (!on) return;
-    for (var j = 0, i = -1, m = on.length, o; j < m; ++j) {
-      if (o = on[j], (!typename.type || o.type === typename.type) && o.name === typename.name) {
-        this.removeEventListener(o.type, o.listener, o.capture);
-      } else {
-        on[++i] = o;
-      }
-    }
-    if (++i) on.length = i;
-    else delete this.__on;
-  };
-}
-
-function onAdd(typename, value, capture) {
-  var wrap = filterEvents.hasOwnProperty(typename.type) ? filterContextListener : contextListener;
-  return function(d, i, group) {
-    var on = this.__on, o, listener = wrap(value, i, group);
-    if (on) for (var j = 0, m = on.length; j < m; ++j) {
-      if ((o = on[j]).type === typename.type && o.name === typename.name) {
-        this.removeEventListener(o.type, o.listener, o.capture);
-        this.addEventListener(o.type, o.listener = listener, o.capture = capture);
-        o.value = value;
-        return;
-      }
-    }
-    this.addEventListener(typename.type, listener, capture);
-    o = {type: typename.type, name: typename.name, value: value, listener: listener, capture: capture};
-    if (!on) this.__on = [o];
-    else on.push(o);
-  };
-}
-
-var selection_on = function(typename, value, capture) {
-  var typenames = parseTypenames(typename + ""), i, n = typenames.length, t;
-
-  if (arguments.length < 2) {
-    var on = this.node().__on;
-    if (on) for (var j = 0, m = on.length, o; j < m; ++j) {
-      for (i = 0, o = on[j]; i < n; ++i) {
-        if ((t = typenames[i]).type === o.type && t.name === o.name) {
-          return o.value;
-        }
-      }
-    }
-    return;
-  }
-
-  on = value ? onAdd : onRemove;
-  if (capture == null) capture = false;
-  for (i = 0; i < n; ++i) this.each(on(typenames[i], value, capture));
-  return this;
-};
-
-var sourceEvent = function() {
-  var current = event, source;
-  while (source = current.sourceEvent) current = source;
-  return current;
-};
-
-var point = function(node, event) {
-  var svg = node.ownerSVGElement || node;
-
-  if (svg.createSVGPoint) {
-    var point = svg.createSVGPoint();
-    point.x = event.clientX, point.y = event.clientY;
-    point = point.matrixTransform(node.getScreenCTM().inverse());
-    return [point.x, point.y];
-  }
-
-  var rect = node.getBoundingClientRect();
-  return [event.clientX - rect.left - node.clientLeft, event.clientY - rect.top - node.clientTop];
-};
-
-function none() {}
-
-var selector = function(selector) {
-  return selector == null ? none : function() {
-    return this.querySelector(selector);
-  };
-};
-
-var selection_select = function(select) {
-  if (typeof select !== "function") select = selector(select);
-
-  for (var groups = this._groups, m = groups.length, subgroups = new Array(m), j = 0; j < m; ++j) {
-    for (var group = groups[j], n = group.length, subgroup = subgroups[j] = new Array(n), node, subnode, i = 0; i < n; ++i) {
-      if ((node = group[i]) && (subnode = select.call(node, node.__data__, i, group))) {
-        if ("__data__" in node) subnode.__data__ = node.__data__;
-        subgroup[i] = subnode;
-      }
-    }
-  }
-
-  return new Selection(subgroups, this._parents);
-};
-
-function empty() {
-  return [];
-}
-
-var selectorAll = function(selector) {
-  return selector == null ? empty : function() {
-    return this.querySelectorAll(selector);
-  };
-};
-
-var selection_selectAll = function(select) {
-  if (typeof select !== "function") select = selectorAll(select);
-
-  for (var groups = this._groups, m = groups.length, subgroups = [], parents = [], j = 0; j < m; ++j) {
-    for (var group = groups[j], n = group.length, node, i = 0; i < n; ++i) {
-      if (node = group[i]) {
-        subgroups.push(select.call(node, node.__data__, i, group));
-        parents.push(node);
-      }
-    }
-  }
-
-  return new Selection(subgroups, parents);
-};
-
-var selection_filter = function(match) {
-  if (typeof match !== "function") match = matcher$1(match);
-
-  for (var groups = this._groups, m = groups.length, subgroups = new Array(m), j = 0; j < m; ++j) {
-    for (var group = groups[j], n = group.length, subgroup = subgroups[j] = [], node, i = 0; i < n; ++i) {
-      if ((node = group[i]) && match.call(node, node.__data__, i, group)) {
-        subgroup.push(node);
-      }
-    }
-  }
-
-  return new Selection(subgroups, this._parents);
-};
-
-var sparse = function(update) {
-  return new Array(update.length);
-};
-
-var selection_enter = function() {
-  return new Selection(this._enter || this._groups.map(sparse), this._parents);
-};
-
-function EnterNode(parent, datum) {
-  this.ownerDocument = parent.ownerDocument;
-  this.namespaceURI = parent.namespaceURI;
-  this._next = null;
-  this._parent = parent;
-  this.__data__ = datum;
-}
-
-EnterNode.prototype = {
-  constructor: EnterNode,
-  appendChild: function(child) { return this._parent.insertBefore(child, this._next); },
-  insertBefore: function(child, next) { return this._parent.insertBefore(child, next); },
-  querySelector: function(selector) { return this._parent.querySelector(selector); },
-  querySelectorAll: function(selector) { return this._parent.querySelectorAll(selector); }
-};
-
-var constant = function(x) {
-  return function() {
-    return x;
-  };
-};
-
-var keyPrefix = "$"; // Protect against keys like “__proto__”.
-
-function bindIndex(parent, group, enter, update, exit, data) {
-  var i = 0,
-      node,
-      groupLength = group.length,
-      dataLength = data.length;
-
-  // Put any non-null nodes that fit into update.
-  // Put any null nodes into enter.
-  // Put any remaining data into enter.
-  for (; i < dataLength; ++i) {
-    if (node = group[i]) {
-      node.__data__ = data[i];
-      update[i] = node;
-    } else {
-      enter[i] = new EnterNode(parent, data[i]);
-    }
-  }
-
-  // Put any non-null nodes that don’t fit into exit.
-  for (; i < groupLength; ++i) {
-    if (node = group[i]) {
-      exit[i] = node;
-    }
-  }
-}
-
-function bindKey(parent, group, enter, update, exit, data, key) {
-  var i,
-      node,
-      nodeByKeyValue = {},
-      groupLength = group.length,
-      dataLength = data.length,
-      keyValues = new Array(groupLength),
-      keyValue;
-
-  // Compute the key for each node.
-  // If multiple nodes have the same key, the duplicates are added to exit.
-  for (i = 0; i < groupLength; ++i) {
-    if (node = group[i]) {
-      keyValues[i] = keyValue = keyPrefix + key.call(node, node.__data__, i, group);
-      if (keyValue in nodeByKeyValue) {
-        exit[i] = node;
-      } else {
-        nodeByKeyValue[keyValue] = node;
-      }
-    }
-  }
-
-  // Compute the key for each datum.
-  // If there a node associated with this key, join and add it to update.
-  // If there is not (or the key is a duplicate), add it to enter.
-  for (i = 0; i < dataLength; ++i) {
-    keyValue = keyPrefix + key.call(parent, data[i], i, data);
-    if (node = nodeByKeyValue[keyValue]) {
-      update[i] = node;
-      node.__data__ = data[i];
-      nodeByKeyValue[keyValue] = null;
-    } else {
-      enter[i] = new EnterNode(parent, data[i]);
-    }
-  }
-
-  // Add any remaining nodes that were not bound to data to exit.
-  for (i = 0; i < groupLength; ++i) {
-    if ((node = group[i]) && (nodeByKeyValue[keyValues[i]] === node)) {
-      exit[i] = node;
-    }
-  }
-}
-
-var selection_data = function(value, key) {
-  if (!value) {
-    data = new Array(this.size()), j = -1;
-    this.each(function(d) { data[++j] = d; });
-    return data;
-  }
-
-  var bind = key ? bindKey : bindIndex,
-      parents = this._parents,
-      groups = this._groups;
-
-  if (typeof value !== "function") value = constant(value);
-
-  for (var m = groups.length, update = new Array(m), enter = new Array(m), exit = new Array(m), j = 0; j < m; ++j) {
-    var parent = parents[j],
-        group = groups[j],
-        groupLength = group.length,
-        data = value.call(parent, parent && parent.__data__, j, parents),
-        dataLength = data.length,
-        enterGroup = enter[j] = new Array(dataLength),
-        updateGroup = update[j] = new Array(dataLength),
-        exitGroup = exit[j] = new Array(groupLength);
-
-    bind(parent, group, enterGroup, updateGroup, exitGroup, data, key);
-
-    // Now connect the enter nodes to their following update node, such that
-    // appendChild can insert the materialized enter node before this node,
-    // rather than at the end of the parent node.
-    for (var i0 = 0, i1 = 0, previous, next; i0 < dataLength; ++i0) {
-      if (previous = enterGroup[i0]) {
-        if (i0 >= i1) i1 = i0 + 1;
-        while (!(next = updateGroup[i1]) && ++i1 < dataLength);
-        previous._next = next || null;
-      }
-    }
-  }
-
-  update = new Selection(update, parents);
-  update._enter = enter;
-  update._exit = exit;
-  return update;
-};
-
-var selection_exit = function() {
-  return new Selection(this._exit || this._groups.map(sparse), this._parents);
-};
-
-var selection_merge = function(selection) {
-
-  for (var groups0 = this._groups, groups1 = selection._groups, m0 = groups0.length, m1 = groups1.length, m = Math.min(m0, m1), merges = new Array(m0), j = 0; j < m; ++j) {
-    for (var group0 = groups0[j], group1 = groups1[j], n = group0.length, merge = merges[j] = new Array(n), node, i = 0; i < n; ++i) {
-      if (node = group0[i] || group1[i]) {
-        merge[i] = node;
-      }
-    }
-  }
-
-  for (; j < m0; ++j) {
-    merges[j] = groups0[j];
-  }
-
-  return new Selection(merges, this._parents);
-};
-
-var selection_order = function() {
-
-  for (var groups = this._groups, j = -1, m = groups.length; ++j < m;) {
-    for (var group = groups[j], i = group.length - 1, next = group[i], node; --i >= 0;) {
-      if (node = group[i]) {
-        if (next && next !== node.nextSibling) next.parentNode.insertBefore(node, next);
-        next = node;
-      }
-    }
-  }
-
-  return this;
-};
-
-var selection_sort = function(compare) {
-  if (!compare) compare = ascending;
-
-  function compareNode(a, b) {
-    return a && b ? compare(a.__data__, b.__data__) : !a - !b;
-  }
-
-  for (var groups = this._groups, m = groups.length, sortgroups = new Array(m), j = 0; j < m; ++j) {
-    for (var group = groups[j], n = group.length, sortgroup = sortgroups[j] = new Array(n), node, i = 0; i < n; ++i) {
-      if (node = group[i]) {
-        sortgroup[i] = node;
-      }
-    }
-    sortgroup.sort(compareNode);
-  }
-
-  return new Selection(sortgroups, this._parents).order();
-};
-
-function ascending(a, b) {
-  return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
-}
-
-var selection_call = function() {
-  var callback = arguments[0];
-  arguments[0] = this;
-  callback.apply(null, arguments);
-  return this;
-};
-
-var selection_nodes = function() {
-  var nodes = new Array(this.size()), i = -1;
-  this.each(function() { nodes[++i] = this; });
-  return nodes;
-};
-
-var selection_node = function() {
-
-  for (var groups = this._groups, j = 0, m = groups.length; j < m; ++j) {
-    for (var group = groups[j], i = 0, n = group.length; i < n; ++i) {
-      var node = group[i];
-      if (node) return node;
-    }
-  }
-
-  return null;
-};
-
-var selection_size = function() {
-  var size = 0;
-  this.each(function() { ++size; });
-  return size;
-};
-
-var selection_empty = function() {
-  return !this.node();
-};
-
-var selection_each = function(callback) {
-
-  for (var groups = this._groups, j = 0, m = groups.length; j < m; ++j) {
-    for (var group = groups[j], i = 0, n = group.length, node; i < n; ++i) {
-      if (node = group[i]) callback.call(node, node.__data__, i, group);
-    }
-  }
-
-  return this;
-};
-
-function attrRemove(name) {
-  return function() {
-    this.removeAttribute(name);
-  };
-}
-
-function attrRemoveNS(fullname) {
-  return function() {
-    this.removeAttributeNS(fullname.space, fullname.local);
-  };
-}
-
-function attrConstant(name, value) {
-  return function() {
-    this.setAttribute(name, value);
-  };
-}
-
-function attrConstantNS(fullname, value) {
-  return function() {
-    this.setAttributeNS(fullname.space, fullname.local, value);
-  };
-}
-
-function attrFunction(name, value) {
-  return function() {
-    var v = value.apply(this, arguments);
-    if (v == null) this.removeAttribute(name);
-    else this.setAttribute(name, v);
-  };
-}
-
-function attrFunctionNS(fullname, value) {
-  return function() {
-    var v = value.apply(this, arguments);
-    if (v == null) this.removeAttributeNS(fullname.space, fullname.local);
-    else this.setAttributeNS(fullname.space, fullname.local, v);
-  };
-}
-
-var selection_attr = function(name, value) {
-  var fullname = namespace(name);
-
-  if (arguments.length < 2) {
-    var node = this.node();
-    return fullname.local
-        ? node.getAttributeNS(fullname.space, fullname.local)
-        : node.getAttribute(fullname);
-  }
-
-  return this.each((value == null
-      ? (fullname.local ? attrRemoveNS : attrRemove) : (typeof value === "function"
-      ? (fullname.local ? attrFunctionNS : attrFunction)
-      : (fullname.local ? attrConstantNS : attrConstant)))(fullname, value));
-};
-
-var defaultView = function(node) {
-  return (node.ownerDocument && node.ownerDocument.defaultView) // node is a Node
-      || (node.document && node) // node is a Window
-      || node.defaultView; // node is a Document
-};
-
-function styleRemove(name) {
-  return function() {
-    this.style.removeProperty(name);
-  };
-}
-
-function styleConstant(name, value, priority) {
-  return function() {
-    this.style.setProperty(name, value, priority);
-  };
-}
-
-function styleFunction(name, value, priority) {
-  return function() {
-    var v = value.apply(this, arguments);
-    if (v == null) this.style.removeProperty(name);
-    else this.style.setProperty(name, v, priority);
-  };
-}
-
-var selection_style = function(name, value, priority) {
-  var node;
-  return arguments.length > 1
-      ? this.each((value == null
-            ? styleRemove : typeof value === "function"
-            ? styleFunction
-            : styleConstant)(name, value, priority == null ? "" : priority))
-      : defaultView(node = this.node())
-          .getComputedStyle(node, null)
-          .getPropertyValue(name);
-};
-
-function propertyRemove(name) {
-  return function() {
-    delete this[name];
-  };
-}
-
-function propertyConstant(name, value) {
-  return function() {
-    this[name] = value;
-  };
-}
-
-function propertyFunction(name, value) {
-  return function() {
-    var v = value.apply(this, arguments);
-    if (v == null) delete this[name];
-    else this[name] = v;
-  };
-}
-
-var selection_property = function(name, value) {
-  return arguments.length > 1
-      ? this.each((value == null
-          ? propertyRemove : typeof value === "function"
-          ? propertyFunction
-          : propertyConstant)(name, value))
-      : this.node()[name];
-};
-
-function classArray(string) {
-  return string.trim().split(/^|\s+/);
-}
-
-function classList(node) {
-  return node.classList || new ClassList(node);
-}
-
-function ClassList(node) {
-  this._node = node;
-  this._names = classArray(node.getAttribute("class") || "");
-}
-
-ClassList.prototype = {
-  add: function(name) {
-    var i = this._names.indexOf(name);
-    if (i < 0) {
-      this._names.push(name);
-      this._node.setAttribute("class", this._names.join(" "));
-    }
-  },
-  remove: function(name) {
-    var i = this._names.indexOf(name);
-    if (i >= 0) {
-      this._names.splice(i, 1);
-      this._node.setAttribute("class", this._names.join(" "));
-    }
-  },
-  contains: function(name) {
-    return this._names.indexOf(name) >= 0;
-  }
-};
-
-function classedAdd(node, names) {
-  var list = classList(node), i = -1, n = names.length;
-  while (++i < n) list.add(names[i]);
-}
-
-function classedRemove(node, names) {
-  var list = classList(node), i = -1, n = names.length;
-  while (++i < n) list.remove(names[i]);
-}
-
-function classedTrue(names) {
-  return function() {
-    classedAdd(this, names);
-  };
-}
-
-function classedFalse(names) {
-  return function() {
-    classedRemove(this, names);
-  };
-}
-
-function classedFunction(names, value) {
-  return function() {
-    (value.apply(this, arguments) ? classedAdd : classedRemove)(this, names);
-  };
-}
-
-var selection_classed = function(name, value) {
-  var names = classArray(name + "");
-
-  if (arguments.length < 2) {
-    var list = classList(this.node()), i = -1, n = names.length;
-    while (++i < n) if (!list.contains(names[i])) return false;
-    return true;
-  }
-
-  return this.each((typeof value === "function"
-      ? classedFunction : value
-      ? classedTrue
-      : classedFalse)(names, value));
-};
-
-function textRemove() {
-  this.textContent = "";
-}
-
-function textConstant(value) {
-  return function() {
-    this.textContent = value;
-  };
-}
-
-function textFunction(value) {
-  return function() {
-    var v = value.apply(this, arguments);
-    this.textContent = v == null ? "" : v;
-  };
-}
-
-var selection_text = function(value) {
-  return arguments.length
-      ? this.each(value == null
-          ? textRemove : (typeof value === "function"
-          ? textFunction
-          : textConstant)(value))
-      : this.node().textContent;
-};
-
-function htmlRemove() {
-  this.innerHTML = "";
-}
-
-function htmlConstant(value) {
-  return function() {
-    this.innerHTML = value;
-  };
-}
-
-function htmlFunction(value) {
-  return function() {
-    var v = value.apply(this, arguments);
-    this.innerHTML = v == null ? "" : v;
-  };
-}
-
-var selection_html = function(value) {
-  return arguments.length
-      ? this.each(value == null
-          ? htmlRemove : (typeof value === "function"
-          ? htmlFunction
-          : htmlConstant)(value))
-      : this.node().innerHTML;
-};
-
-function raise() {
-  if (this.nextSibling) this.parentNode.appendChild(this);
-}
-
-var selection_raise = function() {
-  return this.each(raise);
-};
-
-function lower() {
-  if (this.previousSibling) this.parentNode.insertBefore(this, this.parentNode.firstChild);
-}
-
-var selection_lower = function() {
-  return this.each(lower);
-};
-
-var selection_append = function(name) {
-  var create = typeof name === "function" ? name : creator(name);
-  return this.select(function() {
-    return this.appendChild(create.apply(this, arguments));
-  });
-};
-
-function constantNull() {
-  return null;
-}
-
-var selection_insert = function(name, before) {
-  var create = typeof name === "function" ? name : creator(name),
-      select = before == null ? constantNull : typeof before === "function" ? before : selector(before);
-  return this.select(function() {
-    return this.insertBefore(create.apply(this, arguments), select.apply(this, arguments) || null);
-  });
-};
-
-function remove() {
-  var parent = this.parentNode;
-  if (parent) parent.removeChild(this);
-}
-
-var selection_remove = function() {
-  return this.each(remove);
-};
-
-var selection_datum = function(value) {
-  return arguments.length
-      ? this.property("__data__", value)
-      : this.node().__data__;
-};
-
-function dispatchEvent(node, type, params) {
-  var window = defaultView(node),
-      event = window.CustomEvent;
-
-  if (event) {
-    event = new event(type, params);
-  } else {
-    event = window.document.createEvent("Event");
-    if (params) event.initEvent(type, params.bubbles, params.cancelable), event.detail = params.detail;
-    else event.initEvent(type, false, false);
-  }
-
-  node.dispatchEvent(event);
-}
-
-function dispatchConstant(type, params) {
-  return function() {
-    return dispatchEvent(this, type, params);
-  };
-}
-
-function dispatchFunction(type, params) {
-  return function() {
-    return dispatchEvent(this, type, params.apply(this, arguments));
-  };
-}
-
-var selection_dispatch = function(type, params) {
-  return this.each((typeof params === "function"
-      ? dispatchFunction
-      : dispatchConstant)(type, params));
-};
-
-var root = [null];
-
-function Selection(groups, parents) {
-  this._groups = groups;
-  this._parents = parents;
-}
-
-function selection() {
-  return new Selection([[document.documentElement]], root);
-}
-
-Selection.prototype = selection.prototype = {
-  constructor: Selection,
-  select: selection_select,
-  selectAll: selection_selectAll,
-  filter: selection_filter,
-  data: selection_data,
-  enter: selection_enter,
-  exit: selection_exit,
-  merge: selection_merge,
-  order: selection_order,
-  sort: selection_sort,
-  call: selection_call,
-  nodes: selection_nodes,
-  node: selection_node,
-  size: selection_size,
-  empty: selection_empty,
-  each: selection_each,
-  attr: selection_attr,
-  style: selection_style,
-  property: selection_property,
-  classed: selection_classed,
-  text: selection_text,
-  html: selection_html,
-  raise: selection_raise,
-  lower: selection_lower,
-  append: selection_append,
-  insert: selection_insert,
-  remove: selection_remove,
-  datum: selection_datum,
-  on: selection_on,
-  dispatch: selection_dispatch
-};
-
-var select = function(selector) {
-  return typeof selector === "string"
-      ? new Selection([[document.querySelector(selector)]], [document.documentElement])
-      : new Selection([[selector]], root);
-};
-
-function unwrapExports (x) {
-	return x && x.__esModule ? x['default'] : x;
-}
-
-function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
-}
-
-var lib_1 = createCommonjsModule(function (module, exports) {
+"use strict";
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -1599,192 +1063,1705 @@ var lib = {
 
 exports['default'] = lib;
 module.exports = exports['default'];
-});
 
-var containerManager = createCommonjsModule(function (module) {
-'use strict';
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+"use strict";
+var matcher = function(selector) {
+  return function() {
+    return this.matches(selector);
+  };
+};
 
-var _lib = lib_1;
-
-var _lib2 = _interopRequireDefault(_lib);
-
-var slLib = _lib2['default'].init(typeof window !== "undefined" ? window : undefined),
-    doc = slLib.win.document,
-    documentSupport = slLib.getDocumentSupport(),
-    SVG_BBOX_CORRECTION = documentSupport.isWebKit ? 0 : 4.5;
-
-function ContainerManager(parentContainer, isBrowserLess, maxContainers) {
-    var svg;
-
-    maxContainers = maxContainers > 5 ? maxContainers : 5;
-    maxContainers = maxContainers < 20 ? maxContainers : 20;
-
-    this.maxContainers = maxContainers;
-    this.first = null;
-    this.last = null;
-    this.containers = {};
-    this.length = 0;
-    this.rootNode = parentContainer;
-
-    if (isBrowserLess) {
-        svg = doc.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        svg.setAttributeNS('http://www.w3.org/2000/svg', 'xlink', 'http://www.w3.org/1999/xlink');
-        svg.setAttributeNS('http://www.w3.org/2000/svg', 'height', '0');
-        svg.setAttributeNS('http://www.w3.org/2000/svg', 'width', '0');
-        this.svgRoot = svg;
-        this.rootNode.appendChild(svg);
-    }
+if (typeof document !== "undefined") {
+  var element = document.documentElement;
+  if (!element.matches) {
+    var vendorMatches = element.webkitMatchesSelector
+        || element.msMatchesSelector
+        || element.mozMatchesSelector
+        || element.oMatchesSelector;
+    matcher = function(selector) {
+      return function() {
+        return vendorMatches.call(this, selector);
+      };
+    };
+  }
 }
 
-ContainerManager.prototype.get = function (style) {
-    var diff,
-        key,
-        containerObj,
-        containers = this.containers,
-        len = this.length,
-        max = this.maxContainers,
-        keyStr = '';
+/* harmony default export */ exports["a"] = matcher;
 
-    for (key in slLib.supportedStyle) {
-        if (style[key] !== undefined) {
-            keyStr += slLib.supportedStyle[key] + ':' + style[key] + ';';
+
+/***/ },
+/* 24 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sparse__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(1);
+/* harmony export */ exports["a"] = EnterNode;
+
+
+/* harmony default export */ exports["b"] = function() {
+  return new __WEBPACK_IMPORTED_MODULE_1__index__["a" /* Selection */](this._enter || this._groups.map(__WEBPACK_IMPORTED_MODULE_0__sparse__["a" /* default */]), this._parents);
+};
+
+function EnterNode(parent, datum) {
+  this.ownerDocument = parent.ownerDocument;
+  this.namespaceURI = parent.namespaceURI;
+  this._next = null;
+  this._parent = parent;
+  this.__data__ = datum;
+}
+
+EnterNode.prototype = {
+  constructor: EnterNode,
+  appendChild: function(child) { return this._parent.insertBefore(child, this._next); },
+  insertBefore: function(child, next) { return this._parent.insertBefore(child, next); },
+  querySelector: function(selector) { return this._parent.querySelector(selector); },
+  querySelectorAll: function(selector) { return this._parent.querySelectorAll(selector); }
+};
+
+
+/***/ },
+/* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["a"] = function(update) {
+  return new Array(update.length);
+};
+
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+function empty() {
+  return [];
+}
+
+/* harmony default export */ exports["a"] = function(selector) {
+  return selector == null ? empty : function() {
+    return this.querySelectorAll(selector);
+  };
+};
+
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports, __webpack_require__(29), __webpack_require__(64)) :
+  typeof define === 'function' && define.amd ? define(['exports', 'd3-selection', 'fusioncharts-smartlabel'], factory) :
+  (factory((global.d3 = global.d3 || {}),global.d3,global.d3));
+}(this, (function (exports,d3Selection,SLManager) { 'use strict';
+
+SLManager = 'default' in SLManager ? SLManager['default'] : SLManager;
+
+var util = {
+  mergeRecursive: function mergeRecursive(source, sink) {
+     var prop;
+
+     for (prop in sink) {
+
+         if (source[prop] instanceof Object) {
+             mergeRecursive(source[prop], sink[prop]);
+         }
+         else {
+             source[prop] = sink[prop];
+         }
+     }
+  },
+  serialize: function () {
+
+  },
+  isObject: function (obj) {
+    return typeof obj === 'object';
+  },
+  extend2: function () {
+
+  }
+};
+
+var id = 1;
+var UNDEFINED$1;
+
+var defaultConfig = function () {
+  return {
+    label: {
+        customTagName: 'FT',
+        customTagClassName: 'custom-label',
+        /*text: 'G<br /><FT style="color:blue;">G<FT>C</FT></FT>A<FT>D</FT>',*/
+        /*text: 'A<br/>A<FT style="fill:red; font-size:30px;">B<br/>B<FT style="fill:blue;">C'+
+        '</FT></FT>D<FT style="fill:green;">E</FT>',*/
+        /*text: 'A<FT style="fill:red; font-size:20px;">B<FT style="fill:blue;">C</FT></FT>D'+
+        '<FT style="fill:green;">E</FT>',*/
+        text: '',
+        // text: 'ABC',
+        className: 'label',
+        style: {
+            'font-size': '12px'
+        },
+        maxDimensions: {
+          width: 1600,
+          height: 900
+        },
+        valign: 'middle'
+    },
+    margin: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0
+    },
+    padding: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0
+    },
+    interaction: {
+        hide: false,
+        listeners: [{
+            action: 'click'/*,
+            callback: function () {
+                console.log('click');
+            }*/
+        }],
+        tooltip: {
+            hide: false,
+            text: 'ABC'
+        },
+        className: 'fusioncharts-navigator-standardTimeZone-tracker-rect' + id,
+        style: {
+            'fill': 'rgba(192,192,192,0)',
+            'stroke-width': '0',
+            cursor: 'pointer'
         }
-    }
-
-    if (!keyStr) {
-        return false;
-    }
-
-    if (containerObj = containers[keyStr]) {
-        if (this.first !== containerObj) {
-            containerObj.prev && (containerObj.prev.next = containerObj.next);
-            containerObj.next && (containerObj.next.prev = containerObj.prev);
-            containerObj.next = this.first;
-            containerObj.next.prev = containerObj;
-            this.last === containerObj && (this.last = containerObj.prev);
-            containerObj.prev = null;
-            this.first = containerObj;
-        }
-    } else {
-        if (len >= max) {
-            diff = len - max + 1;
-            // +1 is to remove an extra entry to make space for the new container to be added.
-            while (diff--) {
-                this.removeContainer(this.last);
+    },
+    labelBound: {
+        hide: true,
+        className: 'fusioncharts-navigator-standardTimeZone-label-bound' + id,
+        style: {
+            'fill': 'NONE',
+            'stroke-width': '1',
+            'stroke': '#000'
+        },
+        /*
+         * User defined logical space fn.
+        */
+        customLogicalSpace: UNDEFINED$1,
+        /*
+         * default configurations - comes handy if user gives wrong or no input.
+        */
+        defaultConfig: {
+            pathFn: function (x, y, width, height) {
+                return ['M', x, y, 'L', x + width, y, 'L', x + width, y + height, 'L', x,
+                y + height, 'Z'];
+            },
+            getLogicalSpace: function (width, height, styleObj) {
+                var excess = styleObj['stroke-width'] * 2;
+                width += excess;
+                height += excess;
+                return {
+                    width: width,
+                    height: height
+                };
             }
-        }
-        containerObj = this.addContainer(keyStr);
+        },
+        /*
+         * This creates a custom path for the boundary function.
+        */
+        customPathFn: UNDEFINED$1
     }
-
-    return containerObj;
+  };
 };
 
-ContainerManager.prototype.addContainer = function (keyStr) {
-    var node, container;
+// Imports the utility functions defined.
+// Imports the default configuration for a fusionText generator.
+/*eslint-disable */
+/*eslint-enable */
 
-    this.containers[keyStr] = container = {
-        next: null,
-        prev: null,
-        node: null,
-        ellipsesWidth: 0,
-        lineHeight: 0,
-        dotWidth: 0,
-        avgCharWidth: 4,
-        keyStr: keyStr,
-        charCache: {}
+var win = window;
+var BLANKSTRING = '';
+var UNDEFINED;
+var HYPHENATE = '-';
+var math = Math;
+var mathMax = math.max;
+var str = win.String;
+var toFloat = win.parseFloat;
+var getComputedStyle = win.getComputedStyle;
+
+function FusionText() {
+  this.config = defaultConfig();
+  this.graphics = {};
+  this.measurement = {};
+}
+
+
+// Parse the attributes either in a single config object or in the JSON structure
+FusionText.prototype.margin = function (obj) {
+  obj && util.mergeRecursive(this.config.margin, obj);
+  return this;
+};
+
+FusionText.prototype.padding = function (obj) {
+  obj && util.mergeRecursive(this.config.padding, obj);
+  return this;
+};
+
+FusionText.prototype.label = function (text, options, callback) {
+  var labelConfig = this.config.label;
+  text && (labelConfig.text = text);
+  options && util.mergeRecursive(labelConfig, options);
+  callback && callback.call(this);
+  return this;
+};
+/*FusionText.prototype.interaction = function () {
+  util.mergeRecursive(this.config.interaction, config);
+  return this;
+};
+FusionText.prototype.labelBound = function () {
+  util.mergeRecursive(this.config.labelBound, config);
+  return this;
+};*/
+FusionText.prototype.getSmartLabelInstance = function (inst) {
+  if (!this.smartLabel) {
+    this.smartLabel = inst || new SLManager(new Date().getTime());
+  }
+  return this.smartLabel;
+};
+
+FusionText.prototype.getConfig = function (val) {
+  return this.config[val];
+};
+
+
+
+
+// Compute the logical space for the fusion-text.
+FusionText.prototype.getParentSelection = function (selection) {
+  if (selection) {
+    this.selection = selection;
+  }
+  return this.selection;
+};
+
+FusionText.prototype.getStubSelection = function (parentSelection,
+    defaultClassName, style, classNames, index) {
+  if (classNames) {
+      classNames[1] && (classNames = ' ' + classNames[1]);
+    }
+    else {
+      classNames = BLANKSTRING;
+    }
+
+    var className = (defaultClassName + classNames),
+      selection;
+
+    if (!this._group) {
+      this._group = [];
+    }
+
+    if (!this._group[index]) {
+      this._group[index] = parentSelection.append('g');
+    }
+
+    selection = this._group[index].attr('class', className);
+
+
+
+    if (style) {
+      if (style[2]) {
+        this.recurse(this.normalizeStyle(style[2]), selection, 'style');
+      }
+    }
+    return {
+      selection: selection,
+      // fetch the computed style. Required for FusionText.
+      style: this.getSmartComputedStyle(selection, className)
     };
+};
 
-    // Since the container objects are arranged from most recent to least recent order, we need to add the new
-    // object at the beginning of the list.
-    container.next = this.first;
-    container.next && (container.next.prev = container);
-    this.first = container;
-    if (!this.last) {
-        this.last = container;
+FusionText.prototype.getSmartComputedStyle = function (group, css) {
+  var testText = 'W',
+    mandatoryStyle = {'fill-opacity': 0},
+    className = typeof css === 'string' ? css : undefined,
+    svgText,
+    computedStyle,
+    styleForFusionText;
+
+  svgText = group.append('text').text(testText);
+
+  if (className) {
+    svgText.attr('class', className);
+  } else if (typeof css === 'object') {
+    delete css['fill-opacity'];
+    util.extend2(mandatoryStyle, css);
+  }
+
+  this.recurse(mandatoryStyle, svgText, 'style');
+
+  computedStyle = window.getComputedStyle(svgText.node());
+  styleForFusionText = {
+    fontSize: computedStyle.fontSize,
+    fontFamily: computedStyle.fontFamily,
+    fontWeight: computedStyle.fontWeight,
+    fontStyle: computedStyle.fontStyle
+  };
+
+  svgText.remove();
+
+  return styleForFusionText;
+};
+
+FusionText.prototype.normalizeStyle = function (cssText) {
+  var arr = cssText
+  .replace(/\s/g,'')
+  .split(new RegExp(/([\w\-]+):([a-z\s\d]+);/,'ig')).filter(Boolean),
+  i,
+  len,
+  obj = {};
+  for (i = 0, len = arr.length; i < len; i += 1) {
+  obj[arr[i]] = arr[++i];
+  }
+  return obj;
+};
+
+FusionText.prototype.recurse = function (obj, elem, attr) {
+  var prop;
+  for (prop in obj) {
+  elem[attr].call(elem, prop, obj[prop]);
+  }
+};
+
+FusionText.prototype.parsedText = function () {
+  var labelConfig = this.config.label,
+    titleText = labelConfig.text,
+    customTag = labelConfig.customTagName,
+    customTagClassName = labelConfig.customTagClassName,
+    textArr = this.textArr,
+    parentSelection = this.getParentSelection(),
+    groupArr = [],
+    gIndex = 0,
+    count = 0,
+    elem,
+    g,
+    arr,
+    openingTag,
+    userStr,
+    closingTag,
+    defaultClassName,
+    smartLabel = this.getSmartLabelInstance(),
+    i,
+    t,
+    textDim,
+    len;
+  textArr = this.textArr = [];
+  groupArr.push(this.getStubSelection(parentSelection, labelConfig.className, labelConfig.style, undefined, count));
+  // split the entire string into array of strings.
+  arr = titleText.split(new RegExp('(<' + customTag + ')([^>]*)>|(</' + customTag + '>)', 'g'));
+  openingTag = '<' + customTag;
+  closingTag = '</' + customTag + '>';
+
+  smartLabel.useEllipsesOnOverflow(1);
+
+  // on every occurence of the customTag, create a group and apply the inline css to it.
+  for (i = 0, len = arr.length; i < len; i += 1) {
+    if ((elem = arr[i]) !== UNDEFINED) {
+      // the element is a FusionText.
+      if (elem === openingTag) {
+        // "<FusionText"  -create group.
+        // group index increases.
+        gIndex += 1;
+        // continue the next iteration. - as the style has already been applied inline to the group.
+        defaultClassName = customTagClassName + HYPHENATE + count++;
+        userStr = arr[++i];
+        groupArr[gIndex] = this.getStubSelection(groupArr[gIndex - 1].selection,
+          defaultClassName,
+          new RegExp('\\sstyle=(["\'])([^\\1]+)\\1', 'g').exec(userStr),
+          new RegExp('class=["\']([a-z\\d\\s]+)["\']','gi').exec(userStr),
+          count);
+      }
+      else if (elem === closingTag) {
+        // </FusionText> -  subtract the group index.
+        gIndex -= 1;
+      }
+      // the element is not a FusionText tagged.
+      else if (elem !== BLANKSTRING){
+        g = groupArr[gIndex];
+        t = arr[i];
+        smartLabel.setStyle(g.style);
+        textDim = smartLabel.getOriSize(t || BLANKSTRING);
+        textArr.push({
+          selection: g.selection,
+          oriText: t,
+          text: t,
+          oriWidth: textDim.width,
+          width: textDim.width,
+          oriHeight: textDim.height,
+          height: textDim.height
+        });
+      }
     }
-    this.length += 1;
+  }
+  return textArr;
+};
 
-    node = container.node = doc.createElement('div');
-    this.rootNode.appendChild(node);
+FusionText.prototype.getLogicalSpace = function (selection, options) {
+  selection && this.getParentSelection(selection);
+  var config = this.config,
+    smartLabel = this.getSmartLabelInstance(),
+    maxDimensions = config.label.maxDimensions,
+    margin = config.margin,
+    hMargin = margin.left + margin.right,
+    vMargin = margin.top + margin.bottom,
+    maxWidth = (options && options.width || maxDimensions.width) - hMargin,
+    maxHeight = (options && options.height || maxDimensions.height) - vMargin,
+    smartText,
+    height,
+    width,
+    i,
+    len,
+    textObj,
+    labelBoundConfig = config.labelBound,
+    boundRect = labelBoundConfig.customLogicalSpace || labelBoundConfig.defaultConfig.getLogicalSpace,
+    // parse the entire text into seperable enitity.
+    textArr = this.parsedText(),
+    availableWidth = maxWidth,
+    availableHeight = 0;
+  // indivually calculate the FusionText text for each entity in textArr.
+  for (i = 0, len = textArr.length; i < len; i += 1) {
+    textObj = textArr[i];
+    // check if it exceeds the available space.
+    if (textObj.oriWidth > maxWidth || textObj.oriHeight > maxHeight) {
+      smartText = smartLabel.getSmartText(textObj.oriText, availableWidth,
+        maxHeight);
+      textObj.text = smartText.text;
+      textObj.width = smartText.width;
+      textObj.height = smartText.height;
+    }
+    availableWidth -= textObj.width;
+    availableHeight = mathMax(availableHeight, textObj.height);
+  }
 
-    if (documentSupport.isIE && !documentSupport.hasSVG) {
-        node.style.setAttribute('cssText', keyStr);
+  height = availableHeight;
+  width = maxWidth - availableWidth;
+  return labelBoundConfig.hide ? {
+    width: width + hMargin,
+    height: height + vMargin
+  } : boundRect(height, width, labelBoundConfig.style);
+};
+
+FusionText.prototype.tuneText = function (el, params) {
+  var x = +el.attr('x'),
+  y = +el.attr('y'),
+  computedStyle = getComputedStyle(el.node(), BLANKSTRING),
+  texts = str(params.text).split(/\n|<br\s*?\/?>/ig),
+  fontSize = computedStyle ? toFloat(computedStyle.getPropertyValue("font-size")) : 10,
+  lineHeight = fontSize * 1.2,
+  valign = this.config.label.valign,
+  bb;
+  /*direction = (el.attr('direction') || (computedStyle ?
+    computedStyle.getPropertyValue("direction") : "initial")).toLowerCase();*/
+
+  valign = valign === 'top' ? -0.5 : (valign === 'bottom' ? 0.5 : 0);
+
+  el.selectAll('tspan')
+  .data(texts)
+  .call(this.updateTuning, x, lineHeight, texts, valign)
+  .enter()
+  .append('tspan')
+  .call(this.updateTuning, x, lineHeight, texts, valign);
+
+  bb = el.node().getBBox();
+
+  el.select('tspan')
+  .attr('dy', y - (bb.y + bb.height / 2));
+
+  return (texts.length - 1) * lineHeight;
+};
+
+FusionText.prototype.updateTuning = function (selection, x, lineHeight, texts, valign) {
+  return selection.each(function (d, i) {
+  d3Selection.select(this)
+  .attr('x', x)
+  .attr('dy', i ? lineHeight : lineHeight * texts.length * valign)
+  .text(texts[i]);
+  });
+};
+
+
+
+
+
+
+
+
+
+FusionText.prototype.setDrawingConfiguration = function (x, y, width, height) {
+  var mes = this.measurement;
+
+  if (util.isObject(x)) {
+    y = x.y;
+    width = x.width;
+    height = x.height;
+    x = x.x;
+  }
+
+  mes.x = x;
+  mes.y = y;
+  mes.width = width;
+  mes.height = height;
+  return this;
+};
+
+
+// Draw the fusion-text.
+FusionText.prototype.draw = function () {
+  return this
+    .drawLabelBound.apply(this, arguments)
+    .drawLabel.apply(this, arguments)
+    .drawTracker.apply(this, arguments);
+};
+FusionText.prototype.drawLabelBound = function () {
+  return this;
+};
+FusionText.prototype.drawLabel = function (selection, options) {
+  if (options) {
+    this.setDrawingConfiguration(options);
+  }
+
+  var graphics = this.graphics,
+      labelArr = graphics.labelArr || (graphics.labelArr = []),
+      measurement = this.measurement,
+      margin = this.config.margin,
+      x,
+      y,
+      i,
+      len,
+      width,
+      height,
+      textObj,
+      label,
+      sumX,
+      textArr;
+
+    x = x === undefined ? measurement.x : x;
+    y = y === undefined ? measurement.y : y;
+    width = width === undefined ? measurement.width : width;
+    height = height === undefined ? measurement.height : height;
+
+    this.getLogicalSpace(this.getParentSelection(selection), {
+      width: width,
+      height: height
+    });
+    textArr = this.textArr;
+
+    x += margin.left;
+    y += margin.top;
+
+    sumX = x;
+    // donot draw if height asked is 0
+    if (width && height && (!isFinite(x) || !isFinite(y))) {
+      return;
+    }
+    for (i = 0, len = textArr.length; i < len; i += 1) {
+      textObj = textArr[i];
+      if (!(label = labelArr[i])) {
+        labelArr[i] = label = textObj.selection.append('text');
+      }
+      x = sumX;
+      /*textObj.parentSelection.append('circle').attr('cx', x).attr('cy', y).attr('r', 3)
+      console.log('x: ', x, 'y: ', y);*/
+      label.attr('x', x)
+      .attr('y', y);
+      // .attr('text-anchor', 'top')
+      // .text(textObj.text);
+      y += this.tuneText(label, textObj);
+      sumX += textObj.width;
+    }
+
+    return this;
+};
+FusionText.prototype.drawTracker = function () {
+  return this;
+};
+
+FusionText.prototype.transform = function (str) {
+  return this.getParentSelection()
+  .attr('transform', str);
+};
+
+
+
+// Constructs a new fusionText generator with the default settings.
+var d3Fusiontext = function() {
+  return new FusionText();
+};
+
+exports.fusiontext = d3Fusiontext;
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
+
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_creator__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_local__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_matcher__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_mouse__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_namespace__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_namespaces__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_select__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_selectAll__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_selection_index__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_selector__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_selectorAll__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src_touch__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_touches__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__src_window__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__src_selection_on__ = __webpack_require__(14);
+/* unused harmony reexport creator */
+/* unused harmony reexport local */
+/* unused harmony reexport matcher */
+/* unused harmony reexport mouse */
+/* unused harmony reexport namespace */
+/* unused harmony reexport namespaces */
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_6__src_select__, "a")) __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_6__src_select__["a"]; });
+/* unused harmony reexport selectAll */
+/* unused harmony reexport selection */
+/* unused harmony reexport selector */
+/* unused harmony reexport selectorAll */
+/* unused harmony reexport touch */
+/* unused harmony reexport touches */
+/* unused harmony reexport window */
+/* unused harmony reexport event */
+/* unused harmony reexport customEvent */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ },
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_creator__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_local__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_matcher__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_mouse__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_namespace__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_namespaces__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_select__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_selectAll__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_selection_index__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_selector__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_selectorAll__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src_touch__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_touches__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__src_window__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__src_selection_on__ = __webpack_require__(6);
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__src_creator__, "a")) __webpack_require__.d(exports, "creator", function() { return __WEBPACK_IMPORTED_MODULE_0__src_creator__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_1__src_local__, "a")) __webpack_require__.d(exports, "local", function() { return __WEBPACK_IMPORTED_MODULE_1__src_local__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__src_matcher__, "a")) __webpack_require__.d(exports, "matcher", function() { return __WEBPACK_IMPORTED_MODULE_2__src_matcher__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_3__src_mouse__, "a")) __webpack_require__.d(exports, "mouse", function() { return __WEBPACK_IMPORTED_MODULE_3__src_mouse__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_4__src_namespace__, "a")) __webpack_require__.d(exports, "namespace", function() { return __WEBPACK_IMPORTED_MODULE_4__src_namespace__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_5__src_namespaces__, "a")) __webpack_require__.d(exports, "namespaces", function() { return __WEBPACK_IMPORTED_MODULE_5__src_namespaces__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_6__src_select__, "a")) __webpack_require__.d(exports, "select", function() { return __WEBPACK_IMPORTED_MODULE_6__src_select__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_7__src_selectAll__, "a")) __webpack_require__.d(exports, "selectAll", function() { return __WEBPACK_IMPORTED_MODULE_7__src_selectAll__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_8__src_selection_index__, "c")) __webpack_require__.d(exports, "selection", function() { return __WEBPACK_IMPORTED_MODULE_8__src_selection_index__["c"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_9__src_selector__, "a")) __webpack_require__.d(exports, "selector", function() { return __WEBPACK_IMPORTED_MODULE_9__src_selector__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_10__src_selectorAll__, "a")) __webpack_require__.d(exports, "selectorAll", function() { return __WEBPACK_IMPORTED_MODULE_10__src_selectorAll__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_11__src_touch__, "a")) __webpack_require__.d(exports, "touch", function() { return __WEBPACK_IMPORTED_MODULE_11__src_touch__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_12__src_touches__, "a")) __webpack_require__.d(exports, "touches", function() { return __WEBPACK_IMPORTED_MODULE_12__src_touches__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_13__src_window__, "a")) __webpack_require__.d(exports, "window", function() { return __WEBPACK_IMPORTED_MODULE_13__src_window__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_14__src_selection_on__, "a")) __webpack_require__.d(exports, "event", function() { return __WEBPACK_IMPORTED_MODULE_14__src_selection_on__["a"]; });
+/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_14__src_selection_on__, "c")) __webpack_require__.d(exports, "customEvent", function() { return __WEBPACK_IMPORTED_MODULE_14__src_selection_on__["c"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ },
+/* 30 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["a"] = function(x) {
+  return function() {
+    return x;
+  };
+};
+
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export */ exports["a"] = local;var nextId = 0;
+
+function local() {
+  return new Local;
+}
+
+function Local() {
+  this._ = "@" + (++nextId).toString(36);
+}
+
+Local.prototype = local.prototype = {
+  constructor: Local,
+  get: function(node) {
+    var id = this._;
+    while (!(id in node)) if (!(node = node.parentNode)) return;
+    return node[id];
+  },
+  set: function(node, value) {
+    return node[this._] = value;
+  },
+  remove: function(node) {
+    return this._ in node && delete node[this._];
+  },
+  toString: function() {
+    return this._;
+  }
+};
+
+
+/***/ },
+/* 32 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sourceEvent__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__point__ = __webpack_require__(5);
+
+
+
+/* harmony default export */ exports["a"] = function(node) {
+  var event = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__sourceEvent__["a" /* default */])();
+  if (event.changedTouches) event = event.changedTouches[0];
+  return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__point__["a" /* default */])(node, event);
+};
+
+
+/***/ },
+/* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__selection_index__ = __webpack_require__(0);
+
+
+/* harmony default export */ exports["a"] = function(selector) {
+  return typeof selector === "string"
+      ? new __WEBPACK_IMPORTED_MODULE_0__selection_index__["a" /* Selection */]([[document.querySelector(selector)]], [document.documentElement])
+      : new __WEBPACK_IMPORTED_MODULE_0__selection_index__["a" /* Selection */]([[selector]], __WEBPACK_IMPORTED_MODULE_0__selection_index__["b" /* root */]);
+};
+
+
+/***/ },
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__selection_index__ = __webpack_require__(0);
+
+
+/* harmony default export */ exports["a"] = function(selector) {
+  return typeof selector === "string"
+      ? new __WEBPACK_IMPORTED_MODULE_0__selection_index__["a" /* Selection */]([document.querySelectorAll(selector)], [document.documentElement])
+      : new __WEBPACK_IMPORTED_MODULE_0__selection_index__["a" /* Selection */]([selector == null ? [] : selector], __WEBPACK_IMPORTED_MODULE_0__selection_index__["b" /* root */]);
+};
+
+
+/***/ },
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__creator__ = __webpack_require__(2);
+
+
+/* harmony default export */ exports["a"] = function(name) {
+  var create = typeof name === "function" ? name : __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__creator__["a" /* default */])(name);
+  return this.select(function() {
+    return this.appendChild(create.apply(this, arguments));
+  });
+};
+
+
+/***/ },
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__namespace__ = __webpack_require__(3);
+
+
+function attrRemove(name) {
+  return function() {
+    this.removeAttribute(name);
+  };
+}
+
+function attrRemoveNS(fullname) {
+  return function() {
+    this.removeAttributeNS(fullname.space, fullname.local);
+  };
+}
+
+function attrConstant(name, value) {
+  return function() {
+    this.setAttribute(name, value);
+  };
+}
+
+function attrConstantNS(fullname, value) {
+  return function() {
+    this.setAttributeNS(fullname.space, fullname.local, value);
+  };
+}
+
+function attrFunction(name, value) {
+  return function() {
+    var v = value.apply(this, arguments);
+    if (v == null) this.removeAttribute(name);
+    else this.setAttribute(name, v);
+  };
+}
+
+function attrFunctionNS(fullname, value) {
+  return function() {
+    var v = value.apply(this, arguments);
+    if (v == null) this.removeAttributeNS(fullname.space, fullname.local);
+    else this.setAttributeNS(fullname.space, fullname.local, v);
+  };
+}
+
+/* harmony default export */ exports["a"] = function(name, value) {
+  var fullname = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__namespace__["a" /* default */])(name);
+
+  if (arguments.length < 2) {
+    var node = this.node();
+    return fullname.local
+        ? node.getAttributeNS(fullname.space, fullname.local)
+        : node.getAttribute(fullname);
+  }
+
+  return this.each((value == null
+      ? (fullname.local ? attrRemoveNS : attrRemove) : (typeof value === "function"
+      ? (fullname.local ? attrFunctionNS : attrFunction)
+      : (fullname.local ? attrConstantNS : attrConstant)))(fullname, value));
+};
+
+
+/***/ },
+/* 37 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["a"] = function() {
+  var callback = arguments[0];
+  arguments[0] = this;
+  callback.apply(null, arguments);
+  return this;
+};
+
+
+/***/ },
+/* 38 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+function classArray(string) {
+  return string.trim().split(/^|\s+/);
+}
+
+function classList(node) {
+  return node.classList || new ClassList(node);
+}
+
+function ClassList(node) {
+  this._node = node;
+  this._names = classArray(node.getAttribute("class") || "");
+}
+
+ClassList.prototype = {
+  add: function(name) {
+    var i = this._names.indexOf(name);
+    if (i < 0) {
+      this._names.push(name);
+      this._node.setAttribute("class", this._names.join(" "));
+    }
+  },
+  remove: function(name) {
+    var i = this._names.indexOf(name);
+    if (i >= 0) {
+      this._names.splice(i, 1);
+      this._node.setAttribute("class", this._names.join(" "));
+    }
+  },
+  contains: function(name) {
+    return this._names.indexOf(name) >= 0;
+  }
+};
+
+function classedAdd(node, names) {
+  var list = classList(node), i = -1, n = names.length;
+  while (++i < n) list.add(names[i]);
+}
+
+function classedRemove(node, names) {
+  var list = classList(node), i = -1, n = names.length;
+  while (++i < n) list.remove(names[i]);
+}
+
+function classedTrue(names) {
+  return function() {
+    classedAdd(this, names);
+  };
+}
+
+function classedFalse(names) {
+  return function() {
+    classedRemove(this, names);
+  };
+}
+
+function classedFunction(names, value) {
+  return function() {
+    (value.apply(this, arguments) ? classedAdd : classedRemove)(this, names);
+  };
+}
+
+/* harmony default export */ exports["a"] = function(name, value) {
+  var names = classArray(name + "");
+
+  if (arguments.length < 2) {
+    var list = classList(this.node()), i = -1, n = names.length;
+    while (++i < n) if (!list.contains(names[i])) return false;
+    return true;
+  }
+
+  return this.each((typeof value === "function"
+      ? classedFunction : value
+      ? classedTrue
+      : classedFalse)(names, value));
+};
+
+
+/***/ },
+/* 39 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__enter__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constant__ = __webpack_require__(30);
+
+
+
+
+var keyPrefix = "$"; // Protect against keys like “__proto__”.
+
+function bindIndex(parent, group, enter, update, exit, data) {
+  var i = 0,
+      node,
+      groupLength = group.length,
+      dataLength = data.length;
+
+  // Put any non-null nodes that fit into update.
+  // Put any null nodes into enter.
+  // Put any remaining data into enter.
+  for (; i < dataLength; ++i) {
+    if (node = group[i]) {
+      node.__data__ = data[i];
+      update[i] = node;
     } else {
-        node.setAttribute('style', keyStr);
+      enter[i] = new __WEBPACK_IMPORTED_MODULE_1__enter__["a" /* EnterNode */](parent, data[i]);
     }
+  }
 
-    node.setAttribute('aria-hidden', 'true');
-    node.setAttribute('role', 'presentation');
-    node.style.display = 'inline-block';
+  // Put any non-null nodes that don’t fit into exit.
+  for (; i < groupLength; ++i) {
+    if (node = group[i]) {
+      exit[i] = node;
+    }
+  }
+}
 
-    node.innerHTML = slLib.testStrAvg; // A test string.
-    container.lineHeight = node.offsetHeight;
-    container.avgCharWidth = node.offsetWidth / 3;
+function bindKey(parent, group, enter, update, exit, data, key) {
+  var i,
+      node,
+      nodeByKeyValue = {},
+      groupLength = group.length,
+      dataLength = data.length,
+      keyValues = new Array(groupLength),
+      keyValue;
 
-    if (documentSupport.isBrowserLess) {
-        node = container.svgText = doc.createElementNS('http://www.w3.org/2000/svg', 'text');
-        node.setAttribute('style', keyStr);
-        this.svgRoot.appendChild(node);
+  // Compute the key for each node.
+  // If multiple nodes have the same key, the duplicates are added to exit.
+  for (i = 0; i < groupLength; ++i) {
+    if (node = group[i]) {
+      keyValues[i] = keyValue = keyPrefix + key.call(node, node.__data__, i, group);
+      if (keyValue in nodeByKeyValue) {
+        exit[i] = node;
+      } else {
+        nodeByKeyValue[keyValue] = node;
+      }
+    }
+  }
 
-        node.textContent = slLib.testStrAvg; // A test string.
-        container.lineHeight = node.getBBox().height;
-        container.avgCharWidth = (node.getBBox().width - SVG_BBOX_CORRECTION) / 3;
-
-        node.textContent = '...';
-        container.ellipsesWidth = node.getBBox().width - SVG_BBOX_CORRECTION;
-        node.textContent = '.';
-        container.dotWidth = node.getBBox().width - SVG_BBOX_CORRECTION;
+  // Compute the key for each datum.
+  // If there a node associated with this key, join and add it to update.
+  // If there is not (or the key is a duplicate), add it to enter.
+  for (i = 0; i < dataLength; ++i) {
+    keyValue = keyPrefix + key.call(parent, data[i], i, data);
+    if (node = nodeByKeyValue[keyValue]) {
+      update[i] = node;
+      node.__data__ = data[i];
+      nodeByKeyValue[keyValue] = null;
     } else {
-        node.innerHTML = '...';
-        container.ellipsesWidth = node.offsetWidth;
-        node.innerHTML = '.';
-        container.dotWidth = node.offsetWidth;
-        node.innerHTML = '';
+      enter[i] = new __WEBPACK_IMPORTED_MODULE_1__enter__["a" /* EnterNode */](parent, data[i]);
     }
+  }
 
-    return container;
+  // Add any remaining nodes that were not bound to data to exit.
+  for (i = 0; i < groupLength; ++i) {
+    if ((node = group[i]) && (nodeByKeyValue[keyValues[i]] === node)) {
+      exit[i] = node;
+    }
+  }
+}
+
+/* harmony default export */ exports["a"] = function(value, key) {
+  if (!value) {
+    data = new Array(this.size()), j = -1;
+    this.each(function(d) { data[++j] = d; });
+    return data;
+  }
+
+  var bind = key ? bindKey : bindIndex,
+      parents = this._parents,
+      groups = this._groups;
+
+  if (typeof value !== "function") value = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__constant__["a" /* default */])(value);
+
+  for (var m = groups.length, update = new Array(m), enter = new Array(m), exit = new Array(m), j = 0; j < m; ++j) {
+    var parent = parents[j],
+        group = groups[j],
+        groupLength = group.length,
+        data = value.call(parent, parent && parent.__data__, j, parents),
+        dataLength = data.length,
+        enterGroup = enter[j] = new Array(dataLength),
+        updateGroup = update[j] = new Array(dataLength),
+        exitGroup = exit[j] = new Array(groupLength);
+
+    bind(parent, group, enterGroup, updateGroup, exitGroup, data, key);
+
+    // Now connect the enter nodes to their following update node, such that
+    // appendChild can insert the materialized enter node before this node,
+    // rather than at the end of the parent node.
+    for (var i0 = 0, i1 = 0, previous, next; i0 < dataLength; ++i0) {
+      if (previous = enterGroup[i0]) {
+        if (i0 >= i1) i1 = i0 + 1;
+        while (!(next = updateGroup[i1]) && ++i1 < dataLength);
+        previous._next = next || null;
+      }
+    }
+  }
+
+  update = new __WEBPACK_IMPORTED_MODULE_0__index__["a" /* Selection */](update, parents);
+  update._enter = enter;
+  update._exit = exit;
+  return update;
 };
 
-ContainerManager.prototype.removeContainer = function (cObj) {
-    var keyStr = cObj.keyStr;
 
-    if (!keyStr || !this.length || !cObj) {
-        return;
-    }
-    this.length -= 1;
+/***/ },
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
 
-    cObj.prev && (cObj.prev.next = cObj.next);
-    cObj.next && (cObj.next.prev = cObj.prev);
-    this.first === cObj && (this.first = cObj.next);
-    this.last === cObj && (this.last = cObj.prev);
-
-    cObj.node.parentNode.removeChild(cObj.node);
-
-    delete this.containers[keyStr];
+"use strict";
+/* harmony default export */ exports["a"] = function(value) {
+  return arguments.length
+      ? this.property("__data__", value)
+      : this.node().__data__;
 };
 
-ContainerManager.prototype.dispose = function () {
-    var key,
-        containers = this.containers;
 
-    this.maxContainers = null;
-    for (key in containers) {
-        this.removeContainer(containers[key]);
-    }
+/***/ },
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
 
-    this.rootNode.parentNode.removeChild(this.rootNode);
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__window__ = __webpack_require__(9);
 
-    this.rootNode = null;
-    this.first = null;
-    this.last = null;
+
+function dispatchEvent(node, type, params) {
+  var window = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__window__["a" /* default */])(node),
+      event = window.CustomEvent;
+
+  if (event) {
+    event = new event(type, params);
+  } else {
+    event = window.document.createEvent("Event");
+    if (params) event.initEvent(type, params.bubbles, params.cancelable), event.detail = params.detail;
+    else event.initEvent(type, false, false);
+  }
+
+  node.dispatchEvent(event);
+}
+
+function dispatchConstant(type, params) {
+  return function() {
+    return dispatchEvent(this, type, params);
+  };
+}
+
+function dispatchFunction(type, params) {
+  return function() {
+    return dispatchEvent(this, type, params.apply(this, arguments));
+  };
+}
+
+/* harmony default export */ exports["a"] = function(type, params) {
+  return this.each((typeof params === "function"
+      ? dispatchFunction
+      : dispatchConstant)(type, params));
 };
 
-module.exports = ContainerManager;
-});
 
-var SmartlabelManager = createCommonjsModule(function (module, exports) {
+/***/ },
+/* 42 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["a"] = function(callback) {
+
+  for (var groups = this._groups, j = 0, m = groups.length; j < m; ++j) {
+    for (var group = groups[j], i = 0, n = group.length, node; i < n; ++i) {
+      if (node = group[i]) callback.call(node, node.__data__, i, group);
+    }
+  }
+
+  return this;
+};
+
+
+/***/ },
+/* 43 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["a"] = function() {
+  return !this.node();
+};
+
+
+/***/ },
+/* 44 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sparse__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(0);
+
+
+
+/* harmony default export */ exports["a"] = function() {
+  return new __WEBPACK_IMPORTED_MODULE_1__index__["a" /* Selection */](this._exit || this._groups.map(__WEBPACK_IMPORTED_MODULE_0__sparse__["a" /* default */]), this._parents);
+};
+
+
+/***/ },
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__matcher__ = __webpack_require__(18);
+
+
+
+/* harmony default export */ exports["a"] = function(match) {
+  if (typeof match !== "function") match = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__matcher__["a" /* default */])(match);
+
+  for (var groups = this._groups, m = groups.length, subgroups = new Array(m), j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, subgroup = subgroups[j] = [], node, i = 0; i < n; ++i) {
+      if ((node = group[i]) && match.call(node, node.__data__, i, group)) {
+        subgroup.push(node);
+      }
+    }
+  }
+
+  return new __WEBPACK_IMPORTED_MODULE_0__index__["a" /* Selection */](subgroups, this._parents);
+};
+
+
+/***/ },
+/* 46 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+function htmlRemove() {
+  this.innerHTML = "";
+}
+
+function htmlConstant(value) {
+  return function() {
+    this.innerHTML = value;
+  };
+}
+
+function htmlFunction(value) {
+  return function() {
+    var v = value.apply(this, arguments);
+    this.innerHTML = v == null ? "" : v;
+  };
+}
+
+/* harmony default export */ exports["a"] = function(value) {
+  return arguments.length
+      ? this.each(value == null
+          ? htmlRemove : (typeof value === "function"
+          ? htmlFunction
+          : htmlConstant)(value))
+      : this.node().innerHTML;
+};
+
+
+/***/ },
+/* 47 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__creator__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selector__ = __webpack_require__(7);
+
+
+
+function constantNull() {
+  return null;
+}
+
+/* harmony default export */ exports["a"] = function(name, before) {
+  var create = typeof name === "function" ? name : __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__creator__["a" /* default */])(name),
+      select = before == null ? constantNull : typeof before === "function" ? before : __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__selector__["a" /* default */])(before);
+  return this.select(function() {
+    return this.insertBefore(create.apply(this, arguments), select.apply(this, arguments) || null);
+  });
+};
+
+
+/***/ },
+/* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+function lower() {
+  if (this.previousSibling) this.parentNode.insertBefore(this, this.parentNode.firstChild);
+}
+
+/* harmony default export */ exports["a"] = function() {
+  return this.each(lower);
+};
+
+
+/***/ },
+/* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
+
+
+/* harmony default export */ exports["a"] = function(selection) {
+
+  for (var groups0 = this._groups, groups1 = selection._groups, m0 = groups0.length, m1 = groups1.length, m = Math.min(m0, m1), merges = new Array(m0), j = 0; j < m; ++j) {
+    for (var group0 = groups0[j], group1 = groups1[j], n = group0.length, merge = merges[j] = new Array(n), node, i = 0; i < n; ++i) {
+      if (node = group0[i] || group1[i]) {
+        merge[i] = node;
+      }
+    }
+  }
+
+  for (; j < m0; ++j) {
+    merges[j] = groups0[j];
+  }
+
+  return new __WEBPACK_IMPORTED_MODULE_0__index__["a" /* Selection */](merges, this._parents);
+};
+
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["a"] = function() {
+
+  for (var groups = this._groups, j = 0, m = groups.length; j < m; ++j) {
+    for (var group = groups[j], i = 0, n = group.length; i < n; ++i) {
+      var node = group[i];
+      if (node) return node;
+    }
+  }
+
+  return null;
+};
+
+
+/***/ },
+/* 51 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["a"] = function() {
+  var nodes = new Array(this.size()), i = -1;
+  this.each(function() { nodes[++i] = this; });
+  return nodes;
+};
+
+
+/***/ },
+/* 52 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["a"] = function() {
+
+  for (var groups = this._groups, j = -1, m = groups.length; ++j < m;) {
+    for (var group = groups[j], i = group.length - 1, next = group[i], node; --i >= 0;) {
+      if (node = group[i]) {
+        if (next && next !== node.nextSibling) next.parentNode.insertBefore(node, next);
+        next = node;
+      }
+    }
+  }
+
+  return this;
+};
+
+
+/***/ },
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+function propertyRemove(name) {
+  return function() {
+    delete this[name];
+  };
+}
+
+function propertyConstant(name, value) {
+  return function() {
+    this[name] = value;
+  };
+}
+
+function propertyFunction(name, value) {
+  return function() {
+    var v = value.apply(this, arguments);
+    if (v == null) delete this[name];
+    else this[name] = v;
+  };
+}
+
+/* harmony default export */ exports["a"] = function(name, value) {
+  return arguments.length > 1
+      ? this.each((value == null
+          ? propertyRemove : typeof value === "function"
+          ? propertyFunction
+          : propertyConstant)(name, value))
+      : this.node()[name];
+};
+
+
+/***/ },
+/* 54 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+function raise() {
+  if (this.nextSibling) this.parentNode.appendChild(this);
+}
+
+/* harmony default export */ exports["a"] = function() {
+  return this.each(raise);
+};
+
+
+/***/ },
+/* 55 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+function remove() {
+  var parent = this.parentNode;
+  if (parent) parent.removeChild(this);
+}
+
+/* harmony default export */ exports["a"] = function() {
+  return this.each(remove);
+};
+
+
+/***/ },
+/* 56 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selector__ = __webpack_require__(7);
+
+
+
+/* harmony default export */ exports["a"] = function(select) {
+  if (typeof select !== "function") select = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__selector__["a" /* default */])(select);
+
+  for (var groups = this._groups, m = groups.length, subgroups = new Array(m), j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, subgroup = subgroups[j] = new Array(n), node, subnode, i = 0; i < n; ++i) {
+      if ((node = group[i]) && (subnode = select.call(node, node.__data__, i, group))) {
+        if ("__data__" in node) subnode.__data__ = node.__data__;
+        subgroup[i] = subnode;
+      }
+    }
+  }
+
+  return new __WEBPACK_IMPORTED_MODULE_0__index__["a" /* Selection */](subgroups, this._parents);
+};
+
+
+/***/ },
+/* 57 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selectorAll__ = __webpack_require__(21);
+
+
+
+/* harmony default export */ exports["a"] = function(select) {
+  if (typeof select !== "function") select = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__selectorAll__["a" /* default */])(select);
+
+  for (var groups = this._groups, m = groups.length, subgroups = [], parents = [], j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, node, i = 0; i < n; ++i) {
+      if (node = group[i]) {
+        subgroups.push(select.call(node, node.__data__, i, group));
+        parents.push(node);
+      }
+    }
+  }
+
+  return new __WEBPACK_IMPORTED_MODULE_0__index__["a" /* Selection */](subgroups, parents);
+};
+
+
+/***/ },
+/* 58 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["a"] = function() {
+  var size = 0;
+  this.each(function() { ++size; });
+  return size;
+};
+
+
+/***/ },
+/* 59 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
+
+
+/* harmony default export */ exports["a"] = function(compare) {
+  if (!compare) compare = ascending;
+
+  function compareNode(a, b) {
+    return a && b ? compare(a.__data__, b.__data__) : !a - !b;
+  }
+
+  for (var groups = this._groups, m = groups.length, sortgroups = new Array(m), j = 0; j < m; ++j) {
+    for (var group = groups[j], n = group.length, sortgroup = sortgroups[j] = new Array(n), node, i = 0; i < n; ++i) {
+      if (node = group[i]) {
+        sortgroup[i] = node;
+      }
+    }
+    sortgroup.sort(compareNode);
+  }
+
+  return new __WEBPACK_IMPORTED_MODULE_0__index__["a" /* Selection */](sortgroups, this._parents).order();
+};
+
+function ascending(a, b) {
+  return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
+}
+
+
+/***/ },
+/* 60 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__window__ = __webpack_require__(9);
+
+
+function styleRemove(name) {
+  return function() {
+    this.style.removeProperty(name);
+  };
+}
+
+function styleConstant(name, value, priority) {
+  return function() {
+    this.style.setProperty(name, value, priority);
+  };
+}
+
+function styleFunction(name, value, priority) {
+  return function() {
+    var v = value.apply(this, arguments);
+    if (v == null) this.style.removeProperty(name);
+    else this.style.setProperty(name, v, priority);
+  };
+}
+
+/* harmony default export */ exports["a"] = function(name, value, priority) {
+  var node;
+  return arguments.length > 1
+      ? this.each((value == null
+            ? styleRemove : typeof value === "function"
+            ? styleFunction
+            : styleConstant)(name, value, priority == null ? "" : priority))
+      : __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__window__["a" /* default */])(node = this.node())
+          .getComputedStyle(node, null)
+          .getPropertyValue(name);
+};
+
+
+/***/ },
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+function textRemove() {
+  this.textContent = "";
+}
+
+function textConstant(value) {
+  return function() {
+    this.textContent = value;
+  };
+}
+
+function textFunction(value) {
+  return function() {
+    var v = value.apply(this, arguments);
+    this.textContent = v == null ? "" : v;
+  };
+}
+
+/* harmony default export */ exports["a"] = function(value) {
+  return arguments.length
+      ? this.each(value == null
+          ? textRemove : (typeof value === "function"
+          ? textFunction
+          : textConstant)(value))
+      : this.node().textContent;
+};
+
+
+/***/ },
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sourceEvent__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__point__ = __webpack_require__(5);
+
+
+
+/* harmony default export */ exports["a"] = function(node, touches, identifier) {
+  if (arguments.length < 3) identifier = touches, touches = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__sourceEvent__["a" /* default */])().changedTouches;
+
+  for (var i = 0, n = touches ? touches.length : 0, touch; i < n; ++i) {
+    if ((touch = touches[i]).identifier === identifier) {
+      return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__point__["a" /* default */])(node, touch);
+    }
+  }
+
+  return null;
+};
+
+
+/***/ },
+/* 63 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sourceEvent__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__point__ = __webpack_require__(5);
+
+
+
+/* harmony default export */ exports["a"] = function(node, touches) {
+  if (touches == null) touches = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__sourceEvent__["a" /* default */])().touches;
+
+  for (var i = 0, n = touches ? touches.length : 0, points = new Array(n); i < n; ++i) {
+    points[i] = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__point__["a" /* default */])(node, touches[i]);
+  }
+
+  return points;
+};
+
+
+/***/ },
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -1793,11 +2770,11 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _lib = lib_1;
+var _lib = __webpack_require__(22);
 
 var _lib2 = _interopRequireDefault(_lib);
 
-var _containerManager = containerManager;
+var _containerManager = __webpack_require__(65);
 
 var _containerManager2 = _interopRequireDefault(_containerManager);
 
@@ -2601,619 +3578,195 @@ SmartLabelManager.prototype.dispose = function () {
 
 exports['default'] = SmartLabelManager;
 module.exports = exports['default'];
-});
-
-var SLManager = unwrapExports(SmartlabelManager);
-
-var util = {
-  mergeRecursive: function mergeRecursive(source, sink) {
-     var prop;
-
-     for (prop in sink) {
-
-         if (source[prop] instanceof Object) {
-             mergeRecursive(source[prop], sink[prop]);
-         }
-         else {
-             source[prop] = sink[prop];
-         }
-     }
-  },
-  serialize: function () {
-
-  },
-  isObject: function (obj) {
-    return typeof obj === 'object';
-  },
-  extend2: function () {
-
-  }
-};
-
-var id = 1;
-var UNDEFINED$1;
-
-var defaultConfig = function () {
-  return {
-    label: {
-        customTagName: 'FT',
-        customTagClassName: 'custom-label',
-        /*text: 'G<br /><FT style="color:blue;">G<FT>C</FT></FT>A<FT>D</FT>',*/
-        /*text: 'A<br/>A<FT style="fill:red; font-size:30px;">B<br/>B<FT style="fill:blue;">C'+
-        '</FT></FT>D<FT style="fill:green;">E</FT>',*/
-        /*text: 'A<FT style="fill:red; font-size:20px;">B<FT style="fill:blue;">C</FT></FT>D'+
-        '<FT style="fill:green;">E</FT>',*/
-        text: '',
-        // text: 'ABC',
-        className: 'label',
-        style: {
-            'font-size': '12px'
-        },
-        maxDimensions: {
-          width: 1600,
-          height: 900
-        },
-        valign: 'middle'
-    },
-    margin: {
-        left: 0,
-        right: 0,
-        top: 0,
-        bottom: 0
-    },
-    padding: {
-        left: 0,
-        right: 0,
-        top: 0,
-        bottom: 0
-    },
-    interaction: {
-        hide: false,
-        listeners: [{
-            action: 'click'/*,
-            callback: function () {
-                console.log('click');
-            }*/
-        }],
-        tooltip: {
-            hide: false,
-            text: 'ABC'
-        },
-        className: 'fusioncharts-navigator-standardTimeZone-tracker-rect' + id,
-        style: {
-            'fill': 'rgba(192,192,192,0)',
-            'stroke-width': '0',
-            cursor: 'pointer'
-        }
-    },
-    labelBound: {
-        hide: true,
-        className: 'fusioncharts-navigator-standardTimeZone-label-bound' + id,
-        style: {
-            'fill': 'NONE',
-            'stroke-width': '1',
-            'stroke': '#000'
-        },
-        /*
-         * User defined logical space fn.
-        */
-        customLogicalSpace: UNDEFINED$1,
-        /*
-         * default configurations - comes handy if user gives wrong or no input.
-        */
-        defaultConfig: {
-            pathFn: function (x, y, width, height) {
-                return ['M', x, y, 'L', x + width, y, 'L', x + width, y + height, 'L', x,
-                y + height, 'Z'];
-            },
-            getLogicalSpace: function (width, height, styleObj) {
-                var excess = styleObj['stroke-width'] * 2;
-                width += excess;
-                height += excess;
-                return {
-                    width: width,
-                    height: height
-                };
-            }
-        },
-        /*
-         * This creates a custom path for the boundary function.
-        */
-        customPathFn: UNDEFINED$1
-    }
-  };
-};
-
-{
-  document && document.write(
-   '<script src="http://' + (location.host || 'localhost').split(':')[0] +
-   ':35729/livereload.js?snipver=1"></' + 'script>'
-  );
-}
-/*eslint-enable */
-
-var win = window;
-var BLANKSTRING = '';
-var UNDEFINED;
-var HYPHENATE = '-';
-var math = Math;
-var mathMax = math.max;
-var str = win.String;
-var toFloat = win.parseFloat;
-var getComputedStyle = win.getComputedStyle;
-
-function FusionText() {
-  this.config = defaultConfig();
-  this.graphics = {};
-  this.measurement = {};
-}
-
-
-// Parse the attributes either in a single config object or in the JSON structure
-FusionText.prototype.margin = function (obj) {
-  obj && util.mergeRecursive(this.config.margin, obj);
-  return this;
-};
-
-FusionText.prototype.padding = function (obj) {
-  obj && util.mergeRecursive(this.config.padding, obj);
-  return this;
-};
-
-FusionText.prototype.label = function (text, options, callback) {
-  var labelConfig = this.config.label;
-  text && (labelConfig.text = text);
-  options && util.mergeRecursive(labelConfig, options);
-  callback && callback.call(this);
-  return this;
-};
-/*FusionText.prototype.interaction = function () {
-  util.mergeRecursive(this.config.interaction, config);
-  return this;
-};
-FusionText.prototype.labelBound = function () {
-  util.mergeRecursive(this.config.labelBound, config);
-  return this;
-};*/
-FusionText.prototype.getSmartLabelInstance = function (inst) {
-  if (!this.smartLabel) {
-    this.smartLabel = inst || new SLManager(new Date().getTime());
-  }
-  return this.smartLabel;
-};
-
-FusionText.prototype.getConfig = function (val) {
-  return this.config[val];
-};
-
-
-
-
-// Compute the logical space for the fusion-text.
-FusionText.prototype.getParentSelection = function (selection$$1) {
-  if (selection$$1) {
-    this.selection = selection$$1;
-  }
-  return this.selection;
-};
-
-FusionText.prototype.getStubSelection = function (parentSelection,
-    defaultClassName, style, classNames, index) {
-  console.log(index);
-  if (classNames) {
-      classNames[1] && (classNames = ' ' + classNames[1]);
-    }
-    else {
-      classNames = BLANKSTRING;
-    }
-
-    var className = (defaultClassName + classNames),
-      selection$$1;
-
-    if (!this._group) {
-      this._group = [];
-    }
-
-    if (!this._group[index]) {
-      this._group[index] = parentSelection.append('g');
-    }
-
-    selection$$1 = this._group[index].attr('class', className);
-
-
-
-    if (style) {
-      if (style[2]) {
-        this.recurse(this.normalizeStyle(style[2]), selection$$1, 'style');
-      }
-    }
-    return {
-      selection: selection$$1,
-      // fetch the computed style. Required for FusionText.
-      style: this.getSmartComputedStyle(selection$$1, className)
-    };
-};
-
-FusionText.prototype.getSmartComputedStyle = function (group, css) {
-  var testText = 'W',
-    mandatoryStyle = {'fill-opacity': 0},
-    className = typeof css === 'string' ? css : undefined,
-    svgText,
-    computedStyle,
-    styleForFusionText;
-
-  svgText = group.append('text').text(testText);
-
-  if (className) {
-    svgText.attr('class', className);
-  } else if (typeof css === 'object') {
-    delete css['fill-opacity'];
-    util.extend2(mandatoryStyle, css);
-  }
-
-  this.recurse(mandatoryStyle, svgText, 'style');
-
-  computedStyle = window.getComputedStyle(svgText.node());
-  styleForFusionText = {
-    fontSize: computedStyle.fontSize,
-    fontFamily: computedStyle.fontFamily,
-    fontWeight: computedStyle.fontWeight,
-    fontStyle: computedStyle.fontStyle
-  };
-
-  svgText.remove();
-
-  return styleForFusionText;
-};
-
-FusionText.prototype.normalizeStyle = function (cssText) {
-  var arr = cssText
-  .replace(/\s/g,'')
-  .split(new RegExp(/([\w\-]+):([a-z\s\d]+);/,'ig')).filter(Boolean),
-  i,
-  len,
-  obj = {};
-  for (i = 0, len = arr.length; i < len; i += 1) {
-  obj[arr[i]] = arr[++i];
-  }
-  return obj;
-};
-
-FusionText.prototype.recurse = function (obj, elem, attr) {
-  var prop;
-  for (prop in obj) {
-  elem[attr].call(elem, prop, obj[prop]);
-  }
-};
-
-FusionText.prototype.parsedText = function () {
-  var labelConfig = this.config.label,
-    titleText = labelConfig.text,
-    customTag = labelConfig.customTagName,
-    customTagClassName = labelConfig.customTagClassName,
-    textArr = this.textArr,
-    parentSelection = this.getParentSelection(),
-    groupArr = [],
-    gIndex = 0,
-    count = 0,
-    elem,
-    g,
-    arr,
-    openingTag,
-    userStr,
-    closingTag,
-    defaultClassName,
-    smartLabel = this.getSmartLabelInstance(),
-    i,
-    t,
-    textDim,
-    len;
-  textArr = this.textArr = [];
-  groupArr.push(this.getStubSelection(parentSelection, labelConfig.className, labelConfig.style, undefined, count));
-  // split the entire string into array of strings.
-  arr = titleText.split(new RegExp('(<' + customTag + ')([^>]*)>|(</' + customTag + '>)', 'g'));
-  openingTag = '<' + customTag;
-  closingTag = '</' + customTag + '>';
-
-  smartLabel.useEllipsesOnOverflow(1);
-
-  // on every occurence of the customTag, create a group and apply the inline css to it.
-  for (i = 0, len = arr.length; i < len; i += 1) {
-    if ((elem = arr[i]) !== UNDEFINED) {
-      // the element is a FusionText.
-      if (elem === openingTag) {
-        // "<FusionText"  -create group.
-        // group index increases.
-        gIndex += 1;
-        // continue the next iteration. - as the style has already been applied inline to the group.
-        defaultClassName = customTagClassName + HYPHENATE + count++;
-        userStr = arr[++i];
-        groupArr[gIndex] = this.getStubSelection(groupArr[gIndex - 1].selection,
-          defaultClassName,
-          new RegExp('\\sstyle=(["\'])([^\\1]+)\\1', 'g').exec(userStr),
-          new RegExp('class=["\']([a-z\\d\\s]+)["\']','gi').exec(userStr),
-          count);
-      }
-      else if (elem === closingTag) {
-        // </FusionText> -  subtract the group index.
-        gIndex -= 1;
-      }
-      // the element is not a FusionText tagged.
-      else if (elem !== BLANKSTRING){
-        g = groupArr[gIndex];
-        t = arr[i];
-        smartLabel.setStyle(g.style);
-        textDim = smartLabel.getOriSize(t || BLANKSTRING);
-        textArr.push({
-          selection: g.selection,
-          oriText: t,
-          text: t,
-          oriWidth: textDim.width,
-          width: textDim.width,
-          oriHeight: textDim.height,
-          height: textDim.height
-        });
-      }
-    }
-  }
-  return textArr;
-};
-
-FusionText.prototype.getLogicalSpace = function (selection$$1, options) {
-  selection$$1 && this.getParentSelection(selection$$1);
-  var config = this.config,
-    smartLabel = this.getSmartLabelInstance(),
-    maxDimensions = config.label.maxDimensions,
-    margin = config.margin,
-    hMargin = margin.left + margin.right,
-    vMargin = margin.top + margin.bottom,
-    maxWidth = (options && options.width || maxDimensions.width) - hMargin,
-    maxHeight = (options && options.height || maxDimensions.height) - vMargin,
-    smartText,
-    height,
-    width,
-    i,
-    len,
-    textObj,
-    labelBoundConfig = config.labelBound,
-    boundRect = labelBoundConfig.customLogicalSpace || labelBoundConfig.defaultConfig.getLogicalSpace,
-    // parse the entire text into seperable enitity.
-    textArr = this.parsedText(),
-    availableWidth = maxWidth,
-    availableHeight = 0;
-  // indivually calculate the FusionText text for each entity in textArr.
-  for (i = 0, len = textArr.length; i < len; i += 1) {
-    textObj = textArr[i];
-    // check if it exceeds the available space.
-    if (textObj.oriWidth > maxWidth || textObj.oriHeight > maxHeight) {
-      smartText = smartLabel.getSmartText(textObj.oriText, availableWidth,
-        maxHeight);
-      textObj.text = smartText.text;
-      textObj.width = smartText.width;
-      textObj.height = smartText.height;
-    }
-    availableWidth -= textObj.width;
-    availableHeight = mathMax(availableHeight, textObj.height);
-  }
-
-  height = availableHeight;
-  width = maxWidth - availableWidth;
-  return labelBoundConfig.hide ? {
-    width: width + hMargin,
-    height: height + vMargin
-  } : boundRect(height, width, labelBoundConfig.style);
-};
-
-FusionText.prototype.tuneText = function (el, params) {
-  var x = +el.attr('x'),
-  y = +el.attr('y'),
-  computedStyle = getComputedStyle(el.node(), BLANKSTRING),
-  texts = str(params.text).split(/\n|<br\s*?\/?>/ig),
-  fontSize = computedStyle ? toFloat(computedStyle.getPropertyValue("font-size")) : 10,
-  lineHeight = fontSize * 1.2,
-  valign = this.config.label.valign,
-  bb;
-  /*direction = (el.attr('direction') || (computedStyle ?
-    computedStyle.getPropertyValue("direction") : "initial")).toLowerCase();*/
-
-  valign = valign === 'top' ? -0.5 : (valign === 'bottom' ? 0.5 : 0);
-
-  el.selectAll('tspan')
-  .data(texts)
-  .call(this.updateTuning, x, lineHeight, texts, valign)
-  .enter()
-  .append('tspan')
-  .call(this.updateTuning, x, lineHeight, texts, valign);
-
-  bb = el.node().getBBox();
-
-  el.select('tspan')
-  .attr('dy', y - (bb.y + bb.height / 2));
-
-  return (texts.length - 1) * lineHeight;
-};
-
-FusionText.prototype.updateTuning = function (selection$$1, x, lineHeight, texts, valign) {
-  return selection$$1.each(function (d, i) {
-  select(this)
-  .attr('x', x)
-  .attr('dy', i ? lineHeight : lineHeight * texts.length * valign)
-  .text(texts[i]);
-  });
-};
-
-
-
-
-
-
-
-
-
-FusionText.prototype.setDrawingConfiguration = function (x, y, width, height) {
-  var mes = this.measurement;
-
-  if (util.isObject(x)) {
-    y = x.y;
-    width = x.width;
-    height = x.height;
-    x = x.x;
-  }
-
-  mes.x = x;
-  mes.y = y;
-  mes.width = width;
-  mes.height = height;
-  return this;
-};
-
-
-// Draw the fusion-text.
-FusionText.prototype.draw = function (selection$$1, options) {
-  return this
-    .drawLabelBound.apply(this, arguments)
-    .drawLabel.apply(this, arguments)
-    .drawTracker.apply(this, arguments);
-};
-FusionText.prototype.drawLabelBound = function () {
-  return this;
-};
-FusionText.prototype.drawLabel = function (selection$$1, options) {
-  if (options) {
-    this.setDrawingConfiguration(options);
-  }
-
-  var graphics = this.graphics,
-      labelArr = graphics.labelArr || (graphics.labelArr = []),
-      measurement = this.measurement,
-      margin = this.config.margin,
-      x,
-      y,
-      i,
-      len,
-      width,
-      height,
-      textObj,
-      label,
-      sumX,
-      textArr = this.textArr;
-
-    x = x === undefined ? measurement.x : x;
-    y = y === undefined ? measurement.y : y;
-    width = width === undefined ? measurement.width : width;
-    height = height === undefined ? measurement.height : height;
-
-    this.getLogicalSpace(this.getParentSelection(selection$$1), {
-      width: width,
-      height: height
-    });
-
-    textArr = this.textArr;
-
-    x += margin.left;
-    y += margin.top;
-
-    sumX = x;
-    // donot draw if height asked is 0
-    if (width && height && (!isFinite(x) || !isFinite(y))) {
-      return;
-    }
-    for (i = 0, len = textArr.length; i < len; i += 1) {
-      textObj = textArr[i];
-      if (!(label = labelArr[i])) {
-        labelArr[i] = label = textObj.selection.append('text');
-      }
-      x = sumX;
-      /*textObj.parentSelection.append('circle').attr('cx', x).attr('cy', y).attr('r', 3)
-      console.log('x: ', x, 'y: ', y);*/
-      label.attr('x', x)
-      .attr('y', y);
-      // .attr('text-anchor', 'top')
-      // .text(textObj.text);
-      y += this.tuneText(label, textObj);
-      sumX += textObj.width;
-    }
-
-    return this;
-};
-FusionText.prototype.drawTracker = function () {
-  return this;
-};
-
-FusionText.prototype.transform = function (str) {
-  return this.getParentSelection()
-  .attr('transform', str);
-};
-
-
-
-// Constructs a new fusionText generator with the default settings.
-var d3Fusiontext = function() {
-  return new FusionText();
-};
-
-exports.fusiontext = d3Fusiontext;
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-})));
-
 
 /***/ },
-/* 14 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_creator__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_local__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_matcher__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_mouse__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_namespace__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_namespaces__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_select__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_selectAll__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_selection_index__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_selector__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_selectorAll__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src_touch__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_touches__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__src_window__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__src_selection_on__ = __webpack_require__(5);
-/* unused harmony reexport creator */
-/* unused harmony reexport local */
-/* unused harmony reexport matcher */
-/* unused harmony reexport mouse */
-/* unused harmony reexport namespace */
-/* unused harmony reexport namespaces */
-/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_6__src_select__, "a")) __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_6__src_select__["a"]; });
-/* unused harmony reexport selectAll */
-/* unused harmony reexport selection */
-/* unused harmony reexport selector */
-/* unused harmony reexport selectorAll */
-/* unused harmony reexport touch */
-/* unused harmony reexport touches */
-/* unused harmony reexport window */
-/* unused harmony reexport event */
-/* unused harmony reexport customEvent */
+'use strict';
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
+var _lib = __webpack_require__(22);
 
+var _lib2 = _interopRequireDefault(_lib);
 
+var slLib = _lib2['default'].init(typeof window !== "undefined" ? window : undefined),
+    doc = slLib.win.document,
+    documentSupport = slLib.getDocumentSupport(),
+    SVG_BBOX_CORRECTION = documentSupport.isWebKit ? 0 : 4.5;
 
+function ContainerManager(parentContainer, isBrowserLess, maxContainers) {
+    var svg;
 
+    maxContainers = maxContainers > 5 ? maxContainers : 5;
+    maxContainers = maxContainers < 20 ? maxContainers : 20;
 
+    this.maxContainers = maxContainers;
+    this.first = null;
+    this.last = null;
+    this.containers = {};
+    this.length = 0;
+    this.rootNode = parentContainer;
 
+    if (isBrowserLess) {
+        svg = doc.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttributeNS('http://www.w3.org/2000/svg', 'xlink', 'http://www.w3.org/1999/xlink');
+        svg.setAttributeNS('http://www.w3.org/2000/svg', 'height', '0');
+        svg.setAttributeNS('http://www.w3.org/2000/svg', 'width', '0');
+        this.svgRoot = svg;
+        this.rootNode.appendChild(svg);
+    }
+}
 
+ContainerManager.prototype.get = function (style) {
+    var diff,
+        key,
+        containerObj,
+        containers = this.containers,
+        len = this.length,
+        max = this.maxContainers,
+        keyStr = '';
 
+    for (key in slLib.supportedStyle) {
+        if (style[key] !== undefined) {
+            keyStr += slLib.supportedStyle[key] + ':' + style[key] + ';';
+        }
+    }
 
+    if (!keyStr) {
+        return false;
+    }
 
+    if (containerObj = containers[keyStr]) {
+        if (this.first !== containerObj) {
+            containerObj.prev && (containerObj.prev.next = containerObj.next);
+            containerObj.next && (containerObj.next.prev = containerObj.prev);
+            containerObj.next = this.first;
+            containerObj.next.prev = containerObj;
+            this.last === containerObj && (this.last = containerObj.prev);
+            containerObj.prev = null;
+            this.first = containerObj;
+        }
+    } else {
+        if (len >= max) {
+            diff = len - max + 1;
+            // +1 is to remove an extra entry to make space for the new container to be added.
+            while (diff--) {
+                this.removeContainer(this.last);
+            }
+        }
+        containerObj = this.addContainer(keyStr);
+    }
 
+    return containerObj;
+};
 
+ContainerManager.prototype.addContainer = function (keyStr) {
+    var node, container;
 
+    this.containers[keyStr] = container = {
+        next: null,
+        prev: null,
+        node: null,
+        ellipsesWidth: 0,
+        lineHeight: 0,
+        dotWidth: 0,
+        avgCharWidth: 4,
+        keyStr: keyStr,
+        charCache: {}
+    };
 
+    // Since the container objects are arranged from most recent to least recent order, we need to add the new
+    // object at the beginning of the list.
+    container.next = this.first;
+    container.next && (container.next.prev = container);
+    this.first = container;
+    if (!this.last) {
+        this.last = container;
+    }
+    this.length += 1;
+
+    node = container.node = doc.createElement('div');
+    this.rootNode.appendChild(node);
+
+    if (documentSupport.isIE && !documentSupport.hasSVG) {
+        node.style.setAttribute('cssText', keyStr);
+    } else {
+        node.setAttribute('style', keyStr);
+    }
+
+    node.setAttribute('aria-hidden', 'true');
+    node.setAttribute('role', 'presentation');
+    node.style.display = 'inline-block';
+
+    node.innerHTML = slLib.testStrAvg; // A test string.
+    container.lineHeight = node.offsetHeight;
+    container.avgCharWidth = node.offsetWidth / 3;
+
+    if (documentSupport.isBrowserLess) {
+        node = container.svgText = doc.createElementNS('http://www.w3.org/2000/svg', 'text');
+        node.setAttribute('style', keyStr);
+        this.svgRoot.appendChild(node);
+
+        node.textContent = slLib.testStrAvg; // A test string.
+        container.lineHeight = node.getBBox().height;
+        container.avgCharWidth = (node.getBBox().width - SVG_BBOX_CORRECTION) / 3;
+
+        node.textContent = '...';
+        container.ellipsesWidth = node.getBBox().width - SVG_BBOX_CORRECTION;
+        node.textContent = '.';
+        container.dotWidth = node.getBBox().width - SVG_BBOX_CORRECTION;
+    } else {
+        node.innerHTML = '...';
+        container.ellipsesWidth = node.offsetWidth;
+        node.innerHTML = '.';
+        container.dotWidth = node.offsetWidth;
+        node.innerHTML = '';
+    }
+
+    return container;
+};
+
+ContainerManager.prototype.removeContainer = function (cObj) {
+    var keyStr = cObj.keyStr;
+
+    if (!keyStr || !this.length || !cObj) {
+        return;
+    }
+    this.length -= 1;
+
+    cObj.prev && (cObj.prev.next = cObj.next);
+    cObj.next && (cObj.next.prev = cObj.prev);
+    this.first === cObj && (this.first = cObj.next);
+    this.last === cObj && (this.last = cObj.prev);
+
+    cObj.node.parentNode.removeChild(cObj.node);
+
+    delete this.containers[keyStr];
+};
+
+ContainerManager.prototype.dispose = function () {
+    var key,
+        containers = this.containers;
+
+    this.maxContainers = null;
+    for (key in containers) {
+        this.removeContainer(containers[key]);
+    }
+
+    this.rootNode.parentNode.removeChild(this.rootNode);
+
+    this.rootNode = null;
+    this.first = null;
+    this.last = null;
+};
+
+module.exports = ContainerManager;
 
 /***/ },
-/* 15 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3225,7 +3778,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 
 /***/ },
-/* 16 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3259,12 +3812,12 @@ Local.prototype = local.prototype = {
 
 
 /***/ },
-/* 17 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sourceEvent__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__point__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sourceEvent__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__point__ = __webpack_require__(13);
 
 
 
@@ -3276,11 +3829,11 @@ Local.prototype = local.prototype = {
 
 
 /***/ },
-/* 18 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__selection_index__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__selection_index__ = __webpack_require__(1);
 
 
 /* harmony default export */ exports["a"] = function(selector) {
@@ -3291,11 +3844,11 @@ Local.prototype = local.prototype = {
 
 
 /***/ },
-/* 19 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__selection_index__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__selection_index__ = __webpack_require__(1);
 
 
 /* unused harmony default export */ var _unused_webpack_default_export = function(selector) {
@@ -3306,11 +3859,11 @@ Local.prototype = local.prototype = {
 
 
 /***/ },
-/* 20 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__creator__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__creator__ = __webpack_require__(10);
 
 
 /* harmony default export */ exports["a"] = function(name) {
@@ -3322,11 +3875,11 @@ Local.prototype = local.prototype = {
 
 
 /***/ },
-/* 21 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__namespace__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__namespace__ = __webpack_require__(11);
 
 
 function attrRemove(name) {
@@ -3387,7 +3940,7 @@ function attrFunctionNS(fullname, value) {
 
 
 /***/ },
-/* 22 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3400,7 +3953,7 @@ function attrFunctionNS(fullname, value) {
 
 
 /***/ },
-/* 23 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3482,13 +4035,13 @@ function classedFunction(names, value) {
 
 
 /***/ },
-/* 24 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__enter__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constant__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__enter__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constant__ = __webpack_require__(66);
 
 
 
@@ -3610,7 +4163,7 @@ function bindKey(parent, group, enter, update, exit, data, key) {
 
 
 /***/ },
-/* 25 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3622,11 +4175,11 @@ function bindKey(parent, group, enter, update, exit, data, key) {
 
 
 /***/ },
-/* 26 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__window__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__window__ = __webpack_require__(17);
 
 
 function dispatchEvent(node, type, params) {
@@ -3664,7 +4217,7 @@ function dispatchFunction(type, params) {
 
 
 /***/ },
-/* 27 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3681,7 +4234,7 @@ function dispatchFunction(type, params) {
 
 
 /***/ },
-/* 28 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3691,12 +4244,12 @@ function dispatchFunction(type, params) {
 
 
 /***/ },
-/* 29 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sparse__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sparse__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(1);
 
 
 
@@ -3706,12 +4259,12 @@ function dispatchFunction(type, params) {
 
 
 /***/ },
-/* 30 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__matcher__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__matcher__ = __webpack_require__(23);
 
 
 
@@ -3731,7 +4284,7 @@ function dispatchFunction(type, params) {
 
 
 /***/ },
-/* 31 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3763,12 +4316,12 @@ function htmlFunction(value) {
 
 
 /***/ },
-/* 32 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__creator__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selector__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__creator__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selector__ = __webpack_require__(15);
 
 
 
@@ -3786,7 +4339,7 @@ function constantNull() {
 
 
 /***/ },
-/* 33 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3800,11 +4353,11 @@ function lower() {
 
 
 /***/ },
-/* 34 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(1);
 
 
 /* harmony default export */ exports["a"] = function(selection) {
@@ -3826,7 +4379,7 @@ function lower() {
 
 
 /***/ },
-/* 35 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3844,7 +4397,7 @@ function lower() {
 
 
 /***/ },
-/* 36 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3856,7 +4409,7 @@ function lower() {
 
 
 /***/ },
-/* 37 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3876,7 +4429,7 @@ function lower() {
 
 
 /***/ },
-/* 38 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3911,7 +4464,7 @@ function propertyFunction(name, value) {
 
 
 /***/ },
-/* 39 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3925,7 +4478,7 @@ function raise() {
 
 
 /***/ },
-/* 40 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3940,12 +4493,12 @@ function remove() {
 
 
 /***/ },
-/* 41 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selector__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selector__ = __webpack_require__(15);
 
 
 
@@ -3966,12 +4519,12 @@ function remove() {
 
 
 /***/ },
-/* 42 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selectorAll__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selectorAll__ = __webpack_require__(26);
 
 
 
@@ -3992,7 +4545,7 @@ function remove() {
 
 
 /***/ },
-/* 43 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4004,11 +4557,11 @@ function remove() {
 
 
 /***/ },
-/* 44 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(1);
 
 
 /* harmony default export */ exports["a"] = function(compare) {
@@ -4036,11 +4589,11 @@ function ascending(a, b) {
 
 
 /***/ },
-/* 45 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__window__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__window__ = __webpack_require__(17);
 
 
 function styleRemove(name) {
@@ -4077,7 +4630,7 @@ function styleFunction(name, value, priority) {
 
 
 /***/ },
-/* 46 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4109,12 +4662,12 @@ function textFunction(value) {
 
 
 /***/ },
-/* 47 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sourceEvent__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__point__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sourceEvent__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__point__ = __webpack_require__(13);
 
 
 
@@ -4132,12 +4685,12 @@ function textFunction(value) {
 
 
 /***/ },
-/* 48 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sourceEvent__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__point__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sourceEvent__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__point__ = __webpack_require__(13);
 
 
 
@@ -4153,19 +4706,17 @@ function textFunction(value) {
 
 
 /***/ },
-/* 49 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_fusiontext__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_fusiontext__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_fusiontext___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_d3_fusiontext__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_selection__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_selection__ = __webpack_require__(28);
 
 
 
-var a = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_d3_fusiontext__["fusiontext"])();
-debugger
-  a.label('<FT style="fill:coral;">The quick brown</FT><FT style="fill:blue;">Fox jumps</FT><FT style="fill:orange;">Over the</FT><FT  style="fill:brown;">Lazy dog</FT>',{
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_d3_fusiontext__["fusiontext"])().label('<FT style="fill:coral;">The quick brown</FT><FT style="fill:blue;">Fox jumps</FT><FT style="fill:orange;">Over the</FT><FT  style="fill:brown;">Lazy dog</FT>',{
     valign: 'top'
   })
   .draw(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_d3_selection__["a" /* select */])('#container1'), {
