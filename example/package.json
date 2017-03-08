@@ -1,0 +1,24 @@
+{
+  "name": "d3-fusiontext-implementation",
+  "version": "1.0.0",
+  "description": "This is a sample implementation for d3-fusiontext",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack ./src/index.js bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AyanGhatak/d3-fusiontext/tree/master/example"
+  },
+  "keywords": [
+    "d3-fusiontext",
+    "SVG",
+    "text"
+  ],
+  "author": "AyanGhatak",
+  "license": "MIT",
+  "dependencies": {
+    "d3-fusiontext": "git+https://github.com/AyanGhatak/d3-fusiontext.git"
+  }
+}

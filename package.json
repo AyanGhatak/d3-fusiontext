@@ -2,7 +2,7 @@
   "name": "d3-fusiontext",
   "version": "1.0.0",
   "description": "Creating composition/ fusion of texts using d3. Supporting inline styling and life simpler!",
-  "main": "index.js",
+  "main": "./build/d3-fusiontext.js",
   "author": "FusionCharts Technologies  &lt;support@fusioncharts.com&gt;",
   "contributors": ["Ayan Ghatak", "Akash Goswami"],
   "directories": {

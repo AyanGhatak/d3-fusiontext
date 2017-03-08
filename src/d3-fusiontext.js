@@ -60,10 +60,10 @@ FusionText.prototype.labelBound = function () {
   return this;
 };*/
 FusionText.prototype.getSmartLabelInstance = function (inst) {
-	if (!this.smartLabel) {
-		this.smartLabel = inst || new SLManager(new Date().getTime());
-	}
-	return this.smartLabel;
+  if (!this.smartLabel) {
+    this.smartLabel = inst || new SLManager(new Date().getTime());
+  }
+  return this.smartLabel;
 };
 
 FusionText.prototype.getConfig = function (val) {
@@ -82,7 +82,7 @@ FusionText.prototype.getParentSelection = function (selection) {
 };
 
 FusionText.prototype.getStubSelection = function (parentSelection,
-    defaultClassName, style, classNames) {
+    defaultClassName, style, classNames, index) {
   if (classNames) {
       classNames[1] && (classNames = ' ' + classNames[1]);
     }
@@ -93,12 +93,15 @@ FusionText.prototype.getStubSelection = function (parentSelection,
     var className = (defaultClassName + classNames),
       selection;
 
-
     if (!this._group) {
-      this._group = parentSelection.append('g');
+      this._group = [];
     }
 
-    selection = this._group.attr('class', className);
+    if (!this._group[index]) {
+      this._group[index] = parentSelection.append('g');
+    }
+
+    selection = this._group[index].attr('class', className);
 
 
 
@@ -189,7 +192,7 @@ FusionText.prototype.parsedText = function () {
     textDim,
     len;
   textArr = this.textArr = [];
-  groupArr.push(this.getStubSelection(parentSelection, labelConfig.className, labelConfig.style));
+  groupArr.push(this.getStubSelection(parentSelection, labelConfig.className, labelConfig.style, undefined, count));
   // split the entire string into array of strings.
   arr = titleText.split(new RegExp('(<' + customTag + ')([^>]*)>|(<\/' + customTag + '>)', 'g'));
   openingTag = '<' + customTag;
@@ -211,7 +214,8 @@ FusionText.prototype.parsedText = function () {
         groupArr[gIndex] = this.getStubSelection(groupArr[gIndex - 1].selection,
           defaultClassName,
           new RegExp('\\sstyle=([\"\'])([^\\1]+)\\1', 'g').exec(userStr),
-          new RegExp('class=[\"\']([a-z\\d\\s]+)[\"\']','gi').exec(userStr));
+          new RegExp('class=[\"\']([a-z\\d\\s]+)[\"\']','gi').exec(userStr),
+          count);
       }
       else if (elem === closingTag) {
         // </FusionText> -  subtract the group index.
@@ -241,7 +245,7 @@ FusionText.prototype.parsedText = function () {
 FusionText.prototype.getLogicalSpace = function (selection, options) {
   selection && this.getParentSelection(selection);
   var config = this.config,
-  	smartLabel = this.getSmartLabelInstance(),
+    smartLabel = this.getSmartLabelInstance(),
     maxDimensions = config.label.maxDimensions,
     margin = config.margin,
     hMargin = margin.left + margin.right,
@@ -348,13 +352,7 @@ FusionText.prototype.setDrawingConfiguration = function (x, y, width, height) {
 
 
 // Draw the fusion-text.
-FusionText.prototype.draw = function (selection, options) {
-  if (options && (options.width || options.height)) {
-    this.getLogicalSpace(this.getParentSelection(selection), {
-      width: options.width,
-      height: options.height
-    });
-  }
+FusionText.prototype.draw = function () {
   return this
     .drawLabelBound.apply(this, arguments)
     .drawLabel.apply(this, arguments)
@@ -380,14 +378,19 @@ FusionText.prototype.drawLabel = function (selection, options) {
       height,
       textObj,
       label,
-      // sumY,
       sumX,
-      textArr = this.parsedText();
+      textArr;
 
     x = x === undefined ? measurement.x : x;
     y = y === undefined ? measurement.y : y;
     width = width === undefined ? measurement.width : width;
     height = height === undefined ? measurement.height : height;
+
+    this.getLogicalSpace(this.getParentSelection(selection), {
+      width: width,
+      height: height
+    });
+    textArr = this.textArr;
 
     x += margin.left;
     y += margin.top;
