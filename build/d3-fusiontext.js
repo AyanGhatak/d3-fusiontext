@@ -128,6 +128,12 @@ var defaultConfig = function () {
 // Imports the utility functions defined.
 // Imports the default configuration for a fusionText generator.
 /*eslint-disable */
+{
+  document && document.write(
+   '<script src="http://' + (location.host || 'localhost').split(':')[0] +
+   ':35729/livereload.js?snipver=1"></' + 'script>'
+  );
+}
 /*eslint-enable */
 
 var win = window;
@@ -544,11 +550,11 @@ FusionText.prototype.transform = function (str) {
 
 
 // Constructs a new fusionText generator with the default settings.
-var d3Fusiontext = function() {
+var fusiontext = function() {
   return new FusionText();
 };
 
-exports.fusiontext = d3Fusiontext;
+exports.fusiontext = fusiontext;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

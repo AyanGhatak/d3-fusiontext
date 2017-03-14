@@ -1,6 +1,6 @@
 {
   "name": "d3-fusiontext",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "Creating composition/ fusion of texts using d3. Supporting inline styling and life simpler!",
   "main": "./build/d3-fusiontext.js",
   "author": "FusionCharts Technologies  &lt;support@fusioncharts.com&gt;",
@@ -9,13 +9,13 @@
     "test": "test"
   },
   "scripts": {
-    "pretest": "script/pretest",
-    "test": "tape 'test/**/*-test.js'",
-    "prepublish": "script/prepublish",
-    "dev": "NODE_ENV=dev && script/prepublish --watch",
-    "build": "NODE_ENV=production script/prepublish",
+    "lint": "eslint ./",
+    "dev": "NODE_ENV=dev rm -rf build && mkdir build && rollup -c $1 -f umd -g d3-selection:d3,fusioncharts-smartlabel:d3 -n d3 -o build/d3-fusiontext.js -- index.js && uglifyjs build/d3-fusiontext.js -c negate_iife=false -m -o build/d3-fusiontext.min.js",
+    "build": "NODE_ENV=production rm -rf build && mkdir build && rollup -c $1 -f umd -g d3-selection:d3,fusioncharts-smartlabel:d3 -n d3 -o build/d3-fusiontext.js -- index.js && uglifyjs build/d3-fusiontext.js -c negate_iife=false -m -o build/d3-fusiontext.min.js",
     "reload": "livereload 'build/'",
-    "watch": "npm-run-all --parallel reload dev"
+    "test": "tape 'test/**/*-test.js';",
+    "watch": "npm-run-all --parallel reload dev",
+    "start": ""
   },
   "repository": {
     "type": "git",
