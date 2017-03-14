@@ -544,11 +544,11 @@ FusionText.prototype.transform = function (str) {
 
 
 // Constructs a new fusionText generator with the default settings.
-var d3Fusiontext = function() {
+var fusiontext = function() {
   return new FusionText();
 };
 
-exports.fusiontext = d3Fusiontext;
+exports.fusiontext = fusiontext;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

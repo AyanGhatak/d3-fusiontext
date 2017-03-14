@@ -1,1 +1,1 @@
-export { default as fusiontext } from './src/d3-fusiontext';
+export { default as fusiontext } from './src/fusiontext';
