@@ -128,6 +128,12 @@ var defaultConfig = function () {
 // Imports the utility functions defined.
 // Imports the default configuration for a fusionText generator.
 /*eslint-disable */
+{
+  document && document.write(
+   '<script src="http://' + (location.host || 'localhost').split(':')[0] +
+   ':35729/livereload.js?snipver=1"></' + 'script>'
+  );
+}
 /*eslint-enable */
 
 var win = window;
