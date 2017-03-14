@@ -1,6 +1,6 @@
 {
   "name": "d3-fusiontext",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "Creating composition/ fusion of texts using d3. Supporting inline styling and life simpler!",
   "main": "./build/d3-fusiontext.js",
   "author": "FusionCharts Technologies  &lt;support@fusioncharts.com&gt;",
