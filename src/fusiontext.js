@@ -105,10 +105,8 @@ FusionText.prototype.getStubSelection = function (parentSelection,
 
 
 
-    if (style) {
-      if (style[2]) {
-        this.recurse(this.normalizeStyle(style[2]), selection, 'style');
-      }
+    if (style && style[2]) {
+      this.recurse(this.normalizeStyle(style[2]), selection, 'style');
     }
     return {
       selection: selection,
@@ -169,6 +167,10 @@ FusionText.prototype.recurse = function (obj, elem, attr) {
   }
 };
 
+FusionText.prototype.data = function (data) {
+  this.data = data;
+};
+
 FusionText.prototype.parsedText = function () {
   var labelConfig = this.config.label,
     titleText = labelConfig.text,
@@ -187,12 +189,14 @@ FusionText.prototype.parsedText = function () {
     closingTag,
     defaultClassName,
     smartLabel = this.getSmartLabelInstance(),
+    data = this.data,
     i,
     t,
     textDim,
     len;
   textArr = this.textArr = [];
-  groupArr.push(this.getStubSelection(parentSelection, labelConfig.className, labelConfig.style, undefined, count));
+  groupArr.push(this.getStubSelection(parentSelection, labelConfig.className, labelConfig.style, undefined, count,
+    data));
   // split the entire string into array of strings.
   arr = titleText.split(new RegExp('(<' + customTag + ')([^>]*)>|(<\/' + customTag + '>)', 'g'));
   openingTag = '<' + customTag;
