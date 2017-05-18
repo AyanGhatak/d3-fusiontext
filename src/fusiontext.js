@@ -82,7 +82,7 @@ FusionText.prototype.getParentSelection = function (selection) {
 };
 
 FusionText.prototype.getStubSelection = function (parentSelection,
-    defaultClassName, style, classNames, index) {
+    defaultClassName, style, classNames, index, data) {
   if (classNames) {
       classNames[1] && (classNames = ' ' + classNames[1]);
     }
@@ -98,11 +98,11 @@ FusionText.prototype.getStubSelection = function (parentSelection,
     }
 
     if (!this._group[index]) {
-      this._group[index] = parentSelection.append('g');
+      this._group[index] = parentSelection.append('g')
     }
 
     selection = this._group[index].attr('class', className);
-
+    selection.datum(data);
 
 
     if (style && style[2]) {
